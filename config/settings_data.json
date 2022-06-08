@@ -1,1 +1,176 @@
-{"current":{"colors_solid_button_labels":"#FFFFFF","colors_accent_1":"#121212","colors_accent_2":"#121212","colors_text":"#121212","colors_outline_button_labels":"#121212","colors_background_1":"#FFFFFF","colors_background_2":"#F3F3F3","type_header_font":"helvetica_n7","heading_scale":110,"type_body_font":"helvetica_n4","page_width":"1200","social_instagram_link":"www.instagram.com\/caminollc","predictive_search_enabled":false,"favicon":"shopify:\/\/shop_images\/png_crayon_square.png","currency_code_enabled":false,"sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-bar-0":{"type":"announcement","disabled":true,"settings":{"text":"Welcome to our store","color_scheme":"background-1","link":""}}},"block_order":["announcement-bar-0"],"settings":{}},"header":{"type":"header","settings":{"header_home_enable":false,"color_scheme":"background-1","transparent_header":true,"content_color":"#101010","logo":"shopify:\/\/shop_images\/Camino_LLC_rim_logo_GOLD_3D.png","logo_width":90,"logo_position":"middle-right","menu":"main-menu","menu2":"","show_line_separator":false,"enable_sticky_header":false,"enable_search":true,"enable_account":true}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"link_list","settings":{"heading":"","menu":"footer"}},"86979d90-cc33-43e0-920e-cdf85bfdad22":{"type":"copyright","settings":{"heading":"","subtext":""}}},"block_order":["footer-0","86979d90-cc33-43e0-920e-cdf85bfdad22"],"settings":{"footer_home_enable":false,"color_scheme1":"background-2","color_scheme":"background-1","newsletter_enable":true,"newsletter_heading":"Join the community","show_social":false,"enable_country_selector":false,"enable_language_selector":false,"payment_enable":false}},"main-password-header":{"type":"main-password-header","settings":{"logo":"shopify:\/\/shop_images\/png_crayon_small_cee4a4df-2749-4413-8b6d-84bd7571229a.png","logo_max_width":150,"color_scheme":"background-1"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"background-1"}}},"content_for_index":[]},"presets":{"Default":{"colors_solid_button_labels":"#FFFFFF","colors_accent_1":"#121212","colors_accent_2":"#334FB4","colors_text":"#121212","colors_outline_button_labels":"#121212","colors_background_1":"#FFFFFF","colors_background_2":"#F3F3F3","type_header_font":"assistant_n4","type_body_font":"assistant_n4","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-bar-0":{"type":"announcement","settings":{"color_scheme":"background-1"}}},"block_order":["announcement-bar-0"],"settings":{}}}},"Craft":{"colors_solid_button_labels":"#EFECEC","colors_accent_1":"#2A332F","colors_accent_2":"#476154","colors_text":"#1C1A1A","colors_outline_button_labels":"#7B8382","colors_background_1":"#EFECEC","colors_background_2":"#C1BCAE","type_header_font":"americana_n4","type_body_font":"quattrocento_sans_n4","sections":{"footer":{"type":"footer","blocks":{"menu":{"type":"link_list","settings":{}},"text":{"type":"text","settings":{}}},"block_order":["menu","text"],"settings":{"color_scheme":"accent-1"}}}}}}
+{
+  "current": {
+    "colors_solid_button_labels": "#FFFFFF",
+    "colors_accent_1": "#121212",
+    "colors_accent_2": "#121212",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#FFFFFF",
+    "colors_background_2": "#F3F3F3",
+    "type_header_font": "helvetica_n7",
+    "heading_scale": 110,
+    "type_body_font": "helvetica_n4",
+    "page_width": "1200",
+    "social_instagram_link": "www.instagram.com\/caminollc",
+    "predictive_search_enabled": true,
+    "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/Circle_3.jpg",
+    "currency_code_enabled": false,
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "header_home_enable": true,
+          "color_scheme": "accent-1",
+          "transparent_header": false,
+          "content_color": "#000000",
+          "logo": "shopify:\/\/shop_images\/afbeelding_socialmedia.jpg",
+          "logo_width": 90,
+          "logo_position": "middle-right",
+          "menu": "main-menu",
+          "menu2": "",
+          "show_line_separator": false,
+          "enable_sticky_header": false,
+          "enable_search": true,
+          "enable_account": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "",
+              "menu": "footer"
+            }
+          },
+          "86979d90-cc33-43e0-920e-cdf85bfdad22": {
+            "type": "copyright",
+            "settings": {
+              "heading": "",
+              "subtext": ""
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "86979d90-cc33-43e0-920e-cdf85bfdad22"
+        ],
+        "settings": {
+          "footer_home_enable": false,
+          "color_scheme1": "background-2",
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Join the community",
+          "show_social": false,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/png_crayon_small_cee4a4df-2749-4413-8b6d-84bd7571229a.png",
+          "logo_max_width": 150,
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {
+          }
+        }
+      }
+    },
+    "Craft": {
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_accent_1": "#2A332F",
+      "colors_accent_2": "#476154",
+      "colors_text": "#1C1A1A",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_background_1": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_header_font": "americana_n4",
+      "type_body_font": "quattrocento_sans_n4",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "menu": {
+              "type": "link_list",
+              "settings": {
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "menu",
+            "text"
+          ],
+          "settings": {
+            "color_scheme": "accent-1"
+          }
+        }
+      }
+    }
+  }
+}
