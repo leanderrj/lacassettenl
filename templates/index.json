@@ -1,9 +1,27 @@
 {
   "sections": {
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "cover_image": "shopify:\/\/shop_images\/jamanbroershots-000031-3.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=1QBsF4x3tCM",
+        "description": "",
+        "full_width": false,
+        "full_height": true
+      }
+    },
     "image_banner": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "medium"
+          }
+        },
         "button": {
           "type": "buttons",
           "disabled": true,
@@ -16,14 +34,6 @@
             "button_style_secondary_2": false
           }
         },
-        "heading": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "medium"
-          }
-        },
         "41cb7625-7f3b-4eca-9a80-439a19c7bdd5": {
           "type": "text",
           "disabled": true,
@@ -33,30 +43,21 @@
         }
       },
       "block_order": [
-        "button",
         "heading",
+        "button",
         "41cb7625-7f3b-4eca-9a80-439a19c7bdd5"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/jamanbroershots-000018_983cba18-7139-4f22-bb1e-4a2288e9087f.jpg",
+        "image_2": "shopify:\/\/shop_images\/jamanbroershots-000031.jpg",
         "image_height": "full",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "show_text_box": false,
         "image_overlay_opacity": 0,
-        "color_scheme": "background-2",
+        "color_scheme": "accent-1",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=1QBsF4x3tCM",
-        "description": "",
-        "full_width": false,
-        "full_height": true
       }
     },
     "featured_products": {
@@ -158,8 +159,8 @@
     }
   },
   "order": [
-    "image_banner",
     "video",
+    "image_banner",
     "featured_products",
     "rich_text",
     "collage"
