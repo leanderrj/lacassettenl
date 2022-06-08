@@ -42,7 +42,7 @@
           "color_scheme": "accent-1",
           "header_home_enable": true,
           "transparent_header": false,
-          "content_color": "#000000",
+          "content_color": "#ffffff",
           "logo": "shopify:\/\/shop_images\/Circle.png",
           "logo_width": 100,
           "logo_position": "middle-right",
