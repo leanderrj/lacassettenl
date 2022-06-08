@@ -7,7 +7,7 @@
         "cover_image": "shopify:\/\/shop_images\/jamanbroershots-000031-3.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=1QBsF4x3tCM",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "full_height": true
       }
     },
