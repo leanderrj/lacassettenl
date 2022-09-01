@@ -1,0 +1,89 @@
+@import 'components/skip-to-content.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+/* When adding fonts also preload fonts in theme.liquid */
+@layer base {
+  @font-face {
+    font-display: swap;
+    font-family: 'Circular';
+    font-weight: 300;
+    src: url('circular-book.woff2') format('woff2'), url('circular-book.woff') format('woff')
+  }
+  @font-face {
+    font-display: swap;
+    font-family: 'Circular';
+    font-style: italic;
+    font-weight: 500;
+    src: url('circular-medium-italic.woff2') format('woff2'), url('circular-medium-italic.woff') format('woff');
+  }
+}
+
+/* Shopify /policies pages */
+
+/* shopify-policy__container css taken from custom-text */
+#MainContent > .shopify-policy__container .rte > *:not(img),
+#MainContent > .shopify-policy__container .rte > *:not(.news-post),
+#MainContent > .shopify-policy__container .rte > *:not(.blog-info) {
+  padding-left: 0;
+}
+
+#MainContent > .shopify-policy__container {
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 150px 20px 20px;
+}
+
+#MainContent > .shopify-policy__container p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+#MainContent > .shopify-policy__container > .shopify-policy__body > .rte {
+  padding: 0;
+}
+
+
+#MainContent > .shopify-policy__container > .shopify-policy__title > h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 100%;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  #MainContent > .shopify-policy__container {
+    margin: 0 auto;
+    max-width: 1010px;
+    padding: 200px 120px 80px;
+  }
+
+  #MainContent > .shopify-policy__container p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  #MainContent > .shopify-policy__container > .shopify-policy__title > h1 {
+    font-size: 80px;
+  }
+}
+
+.checkpoint__wrapper {
+  margin-top: 30vh;
+}
+
+.checkpoint__wrapper button {
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.checkpoint__message {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,36 @@
+{
+  "scripts": {
+    "build": "webpack b --node-env production --config .dev/webpack.config.js",
+    "watch:offline": "webpack watch --config .dev/webpack.config.js",
+    "watch": "shopify theme serve & webpack w --config .dev/webpack.config.js",
+    "dev": "npm run watch",
+    "start": "npm run watch"
+  },
+  "name": "leme-dawn",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.16",
+    "postcss-import": "^14.1.0",
+    "postcss-loader": "^7.0.1",
+    "prettier": "^2.7.1",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.10.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^27.0.0",
+    "tailwindcss": "^3.1",
+    "webpack": "^5.44.0"
+  },
+  "dependencies": {
+    "@vimeo/player": "^2.17.1",
+    "picoapp": "^3.6.2",
+    "webpack-cli": "^4.7.2"
+  }
+}

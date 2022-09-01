@@ -1,0 +1,483 @@
+	<div class="cassette-container cassette-height ">
+
+	{% if section.settings.title__ != blank %}
+		<div class="section-header text-center">
+			<h2>{{ section.settings.title__ | escape }}</h2>
+		</div>
+	{% endif %}
+
+
+	<div class="cassette-grid">
+		{% for block in section.blocks  limit: 8 offset: 0%}
+
+			{% if block.type == 'text_block' %}
+			<div class="cassette-grid__item {{ block.type }}" >
+				{% if block.settings.enable_image %}
+					{% if block.settings.image != blank %}
+					{% capture img_id %}TextColumnImage-{{ block.id }}{% endcapture %}
+					{% capture wrapper_id %}TextColumnImageWrapper-{{ block.id }}{% endcapture %}
+					{%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+					{% include 'image-style', image: block.settings.image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
+					<div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
+						<div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
+							<img id="{{ img_id }}"
+								class="feature-row__image lazyload"
+								data-src="{{ img_url }}"
+								data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+								data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+								data-sizes="auto"
+								alt="{{ block.settings.image.alt | escape }}">
+						</div>
+					</div>
+					<noscript>
+						<p>
+							{{ block.settings.image | img_url: '480x480', scale: 2 | img_tag: block.settings.image.alt, 'feature-row__image' }}
+						</p>
+					</noscript>
+					{% else %}
+					<p>
+						{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+					</p>
+					{% endif %}
+				{% endif %}
+				{% if block.settings.title != blank %}
+					<h3 class="h4">{{ block.settings.title | escape }}</h3>
+				{% endif %}
+				{% if block.settings.text != blank %}
+					<div class="rte-setting">{{ block.settings.text }}</div>
+				{% endif %}
+
+				{% if block.settings.button_label != blank and block.settings.button_link != blank %}
+					{%- capture ariaLabel -%}
+					{{- block.settings.button_label -}}
+					{%- if block.settings.button_link.type == 'frontpage_link' -%}
+						: {{ 'homepage.general.title' | t -}}
+					{%- elsif block.settings.button_link.type == 'catalog_link' -%}
+						: {{ 'collections.catalog.title' | t -}}
+					{%- elsif block.settings.button_link.object.title -%}
+						: {{ block.settings.button_link.object.title -}}
+					{%- endif -%}
+					{%- endcapture -%}
+
+					<a href="{{ block.settings.button_link }}"
+					class="btn btn--secondary btn--small"
+					aria-label="{{ ariaLabel | escape }}">
+					{{- block.settings.button_label | escape -}}
+					</a>
+				{% endif %}
+			</div>
+			{% endif %}
+
+
+			{% if block.type == 'image_block' %}
+			<div class="cassette-grid__item {{ block.type }}" >
+
+				{% if block.settings.block_link != blank %}
+					<a class="cassette-grid__link" href="{{ block.settings.block_link | escape }}">
+				{% endif %}
+
+					{% if block.settings.title and block.settings.subtitle != blank %}
+					<section class="block_post__meta" >
+						{% if block.settings.title != blank %}
+							<h3 class="h4 block_title">{{ block.settings.title | escape }}</h3>
+						{% endif %}
+
+						{% if block.settings.subtitle != blank %}
+							<h3 class="h4 block_subtitle">{{ block.settings.subtitle | escape }}</h3>
+						{% endif %}
+					</section>
+					{% endif %}
+
+					{% if block.settings.image != blank %}
+					{%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+						<img id="{{ img_id }}"
+							class="block_post__image lazyload"
+							data-src="{{ img_url }}"
+							data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+							data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+							data-sizes="auto"
+							alt="{{ block.settings.image.alt | escape }}">
+					{% endif %}
+
+				{% if block.settings.block_link != blank %}
+					</a>
+				{% endif %}
+
+			</div>
+			{% endif %}
+
+
+			{% if block.type == 'video_block' %}
+			<div class="cassette-grid__item {{ block.type }}" >
+
+				{% if block.settings.title and block.settings.subtitle != blank %}
+					<section class="block_post__meta" >
+					{% if block.settings.title != blank %}
+						<h3 class="h4 block_title">{{ block.settings.title | escape }}</h3>
+					{% endif %}
+
+					{% if block.settings.subtitle != blank %}
+						<h3 class="h4 block_subtitle">{{ block.settings.subtitle | escape }}</h3>
+					{% endif %}
+					</section>
+				{% endif %}
+
+				{% include 'cassette-grid__video' %}
+
+
+			</div>
+			{% endif %}
+
+		{% endfor %}
+	</div>
+
+
+
+	{% if section.settings.color_title contains 'rgba(0,0,0,0)' %}
+		{%- assign title_color = settings.cassette_brand_1 %}
+	{% else %}
+		{%- assign title_color = section.settings.color_title %}
+	{% endif %}
+
+	<style>
+		.block_post__meta .block_title {
+			color: {{ title_color }};
+		}
+
+		.block_post__meta {
+			font-size: {{ section.settings.font_size }}px;
+		}
+
+	</style>
+
+	</div>
+
+
+
+{% schema %}
+{
+	"name": "La Cassette | gallery",
+	"class": "lacasette_gallery",
+	"settings": [
+		{
+			"type": "color",
+			"id": "color_title",
+			"label": "Title colors",
+			"info": "Overwrites the 'Theme settings' color",
+			"default": "#facd02"
+		},
+		{
+			"type": "range",
+			"id": "font_size",
+			"label": "Title size",
+			"min": 0,
+			"max": 100,
+			"step": 1,
+			"unit": "px",
+			"default": 19
+		}
+	],
+	"blocks": [
+		{
+			"type": "text_block",
+			"name": "Column (Not Optimal)",
+			"settings": [
+			{
+				"type": "checkbox",
+				"id": "enable_image",
+				"label": {
+					"cs": "Zobrazit obrázek",
+					"da": "Vis billede",
+					"de": "Foto anzeigen",
+					"en": "Show image",
+					"es": "Mostrar imagen",
+					"fi": "Näytä kuva",
+					"fr": "Afficher l'image",
+					"it": "Mostra immagine",
+					"ja": "画像を表示する",
+					"ko": "이미지 표시",
+					"nb": "Vis bilde",
+					"nl": "Toon afbeelding",
+					"pl": "Pokaż obraz",
+					"pt-BR": "Exibir imagem",
+					"pt-PT": "Mostrar imagem",
+					"sv": "Visa bild",
+					"th": "แสดงรูปภาพ",
+					"tr": "Görseli göster",
+					"vi": "Hiển thị hình ảnh",
+					"zh-CN": "显示图片",
+					"zh-TW": "顯示圖片"
+				},
+				"default": true
+			},
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": {
+					"cs": "Obrázek",
+					"da": "Billede",
+					"de": "Foto",
+					"en": "Image",
+					"es": "Imagen",
+					"fi": "Kuva",
+					"fr": "Image",
+					"it": "Immagine",
+					"ja": "画像",
+					"ko": "이미지",
+					"nb": "Bilde",
+					"nl": "Afbeelding",
+					"pl": "Obraz",
+					"pt-BR": "Imagem",
+					"pt-PT": "Imagem",
+					"sv": "Bild",
+					"th": "รูปภาพ",
+					"tr": "Görsel",
+					"vi": "Hình ảnh",
+					"zh-CN": "图片",
+					"zh-TW": "圖片"
+				}
+			},
+			{
+				"type": "text",
+				"id": "title",
+				"label": {
+					"cs": "Nadpis",
+					"da": "Overskrift",
+					"de": "Titel",
+					"en": "Heading",
+					"es": "Título",
+					"fi": "Otsake",
+					"fr": "En-tête",
+					"it": "Heading",
+					"ja": "見出し",
+					"ko": "제목",
+					"nb": "Overskrift",
+					"nl": "Kop",
+					"pl": "Nagłówek",
+					"pt-BR": "Título",
+					"pt-PT": "Título",
+					"sv": "Rubrik",
+					"th": "ส่วนหัว",
+					"tr": "Başlık",
+					"vi": "Tiêu đề",
+					"zh-CN": "标题",
+					"zh-TW": "標題"
+				},
+				"default": {
+					"cs": "Přidejte nadpis nebo slogan",
+					"da": "Tilføj en titel eller et slogan",
+					"de": "Titel oder Text hinzufügen",
+					"en": "Add a title or tagline",
+					"es": "Agregar un título o eslogan",
+					"fi": "Lisää otsikko tai iskulause",
+					"fr": "Ajouter un titre ou un slogan",
+					"it": "Aggiungi un titolo o una tagline",
+					"ja": "タイトルまたはキャッチコピーを追加する",
+					"ko": "제목 또는 슬로건 추가",
+					"nb": "Legg til en tittel eller er slagord",
+					"nl": "Voeg een titel of een slogan toe",
+					"pl": "Dodaj tytuł lub slogan",
+					"pt-BR": "Adicione um título ou slogan",
+					"pt-PT": "Adicionar título ou slogan",
+					"sv": "Lägg till en titel eller tagline",
+					"th": "เพิ่มชื่อเรื่องหรือสโลแกน",
+					"tr": "Başlık ve slogan ekleyin",
+					"vi": "Thêm tiêu đề hoặc câu đúc kết",
+					"zh-CN": "添加标题或标语",
+					"zh-TW": "新增標題或標語"
+				}
+			},
+			{
+				"type": "richtext",
+				"id": "text",
+				"label": {
+					"cs": "Text",
+					"da": "Tekst",
+					"de": "Text",
+					"en": "Text",
+					"es": "Texto",
+					"fi": "Teksti",
+					"fr": "Texte",
+					"it": "Testo",
+					"ja": "テキスト",
+					"ko": "텍스트",
+					"nb": "Tekst",
+					"nl": "Tekst",
+					"pl": "Tekst",
+					"pt-BR": "Texto",
+					"pt-PT": "Texto",
+					"sv": "Text",
+					"th": "ข้อความ",
+					"tr": "Metin",
+					"vi": "Văn bản",
+					"zh-CN": "文本",
+					"zh-TW": "文字"
+				}
+			},
+			{
+				"type": "text",
+				"id": "button_label",
+				"label": {
+					"cs": "Text tlačítka",
+					"da": "Knaptekst",
+					"de": "Button-Name",
+					"en": "Button label",
+					"es": "Etiqueta de botón",
+					"fi": "Tekstipainike",
+					"fr": "Texte du bouton",
+					"it": "Etichetta pulsante",
+					"ja": "ボタンのラベル",
+					"ko": "버튼 레이블",
+					"nb": "Knappetikett",
+					"nl": "Knoplabel",
+					"pl": "Przycisk z etykietą",
+					"pt-BR": "Etiqueta de botão",
+					"pt-PT": "Etiqueta do botão",
+					"sv": "Knappetikett",
+					"th": "ป้ายกำกับปุ่ม",
+					"tr": "Düğme etiketi",
+					"vi": "Nhãn nút",
+					"zh-CN": "按钮标签",
+					"zh-TW": "按鈕標籤"
+				}
+			},
+			{
+				"type": "url",
+				"id": "button_link",
+				"label": {
+					"cs": "Tlačítkový odkaz",
+					"da": "Knaplink",
+					"de": "Button-Link",
+					"en": "Button link",
+					"es": "Enlace de botón",
+					"fi": "Painikelinkki",
+					"fr": "Lien du bouton",
+					"it": "Link pulsante",
+					"ja": "ボタンのリンク",
+					"ko": "버튼 링크",
+					"nb": "Kobling for knapp",
+					"nl": "Knoplink",
+					"pl": "Link przycisku",
+					"pt-BR": "Link de botão",
+					"pt-PT": "Ligação do botão",
+					"sv": "Knapplänk",
+					"th": "ลิงก์ปุ่ม",
+					"tr": "Düğme bağlantısı",
+					"vi": "Liên kết trên nút",
+					"zh-CN": "按钮链接",
+					"zh-TW": "按鈕連結"
+				}
+			}
+			]
+		},
+
+		{
+			"type": "image_block",
+			"name": "Image block",
+			"settings": [
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image"
+			},
+			{
+				"type": "text",
+				"id": "title",
+				"label": "Heading"
+			},
+			{
+				"type": "text",
+				"id": "subtitle",
+				"label": "Subheading"
+			},
+			{
+				"type": "url",
+				"id": "block_link",
+				"label": "Block link"
+			}
+			]
+		},
+		{
+			"type": "video_block",
+			"name": "Video block",
+			"settings": [
+
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Video cover image"
+			},
+			{
+				"type": "text",
+				"id": "video_link",
+				"label": "Youtube link",
+				"default": "https://www.youtube.com/watch?v=PrRIOLlLK2M"
+			},
+			{
+				"type": "select",
+				"id": "style",
+				"label": "Style",
+				"default": "image_with_play",
+				"options": [
+					{
+					"label": "Image with play button",
+					"value": "image_with_play"
+					},
+					{
+					"label": "Background video",
+					"value": "background"
+					}
+				]
+			},
+			{
+				"type": "checkbox",
+				"id": "show_overlay",
+				"label": "Show overlay",
+				"default": true
+			},
+			{
+				"type": "text",
+				"id": "video_title",
+				"label": "Video title"
+			},
+			{
+				"type": "text",
+				"id": "title",
+				"label": "Heading"
+			},
+			{
+				"type": "text",
+				"id": "subtitle",
+				"label": "Subheading"
+			},
+			{
+				"type": "url",
+				"id": "block_link",
+				"label": "Block link"
+			}
+			]
+		}
+
+
+
+	],
+	"presets": [
+		{
+			"name": "La Cassette | gallery",
+			"category": "Leme for La Cassette",
+			"blocks": [
+			{
+				"type": "text_block"
+			},
+			{
+				"type": "text_block"
+			},
+			{
+				"type": "text_block"
+			}
+			]
+		}
+	]
+}
+{% endschema %}
