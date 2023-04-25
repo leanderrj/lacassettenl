@@ -1,0 +1,105 @@
+{% comment %}
+    Renders a product card
+
+    Accepts:
+    - block: {Object} Block object (optional)
+    - card_article: {Object} URL Liquid object (optional)
+
+    - card_product: {Object} Product Liquid object (optional)
+    - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+
+    - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
+    - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+
+    - section_id: {String} The ID of the section that contains this card.
+
+    Usage:
+    {% render 'card-product', show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+
+{%- liquid
+  if card_article contains "/blogs" and blog_article != true
+    assign article_link = card_article | remove: "/blogs/"
+    assign card_article_object = articles[article_link]
+  endif
+
+  assign card_image = card_article_object.image
+  assign card_url = card_article_object.url
+
+  assign ratio = 1
+  if card_image and media_aspect_ratio == 'portrait'
+    assign ratio = 0.8
+  elsif card_image and media_aspect_ratio == 'adapt'
+    assign ratio = card_image.aspect_ratio
+  endif
+  if ratio == 0 or ratio == nil
+    assign ratio = 1
+  endif
+-%}
+
+<div class="card-wrapper twcss-group
+  twcss-w-[320px]  md:twcss-w-auto
+  {% if hover_effect %}  hover:twcss-z-40 hover:twcss-bg-black {% endif %}
+  "
+  >
+
+    <div class="card
+      card--{{ settings.card_style }}
+      twcss-text-black group-hover:twcss-text-white
+      {% if card_image %} card--media{% else %} card--text{% endif %}
+      {% if extend_height %} card--extend-height{% endif %}
+      {% if card_image == nil and settings.card_style == 'card' %} ratio{% endif %}"
+      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+    >
+      <div class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_image or settings.card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+
+        {%- if card_image -%}
+          <div class="card__media">
+            <div class="media media--transparent">
+              {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+              <img
+                srcset="{%- if card_image.width >= 165 -%}{{ card_image | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if card_image.width >= 360 -%}{{ card_image | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if card_image.width >= 533 -%}{{ card_image | image_url: width: 533 }} 533w,{%- endif -%}
+                  {%- if card_image.width >= 720 -%}{{ card_image | image_url: width: 720 }} 720w,{%- endif -%}
+                  {%- if card_image.width >= 940 -%}{{ card_image | image_url: width: 940 }} 940w,{%- endif -%}
+                  {%- if card_image.width >= 1066 -%}{{ card_image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                  {{ card_image | image_url }} {{ card_image.width }}w"
+                src="{{ card_image | image_url: width: 533 }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                alt="{{ card_image.alt | escape }}"
+                class="motion-reduce"
+                {% unless lazy_load == false %}loading="lazy"{% endunless %}
+                width="{{ card_image.width }}"
+                height="{{ card_image.height }}"
+              >
+              {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+
+            </div>
+          </div>
+        {%- endif -%}
+
+      </div>
+
+      <div class="card__content twcss-bg-white group-hover:twcss-bg-black group-hover:twcss-mb-0 twcss-mb-20">
+        {% render 'event-badges',
+          article_object: card_article_object,
+          hover_effects: true,
+          font_size: 'twcss-text-base'
+        %}
+
+        <div class="information twcss-max-w-md ">
+          <h5 class="card__heading twcss-text-lg twcss-font-bold
+          {% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
+            <a href="{{ card_url }}" id="CardLink-{{ section_id }}-{{ card_article.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
+              {{ card_article_object.title | escape }}
+            </a>
+          </h5>
+
+          <span class="twcss-text-lg">{{ card_article_object.metafields.event.wiewatwaar | escape }}</span>
+          <aside class="group-hover:twcss-opacity-100 group-hover:twcss-h-20 twcss-opacity-0 twcss-text-base twcss-overflow-hidden twcss-h-0 ">{{ card_article_object.excerpt_or_content }}</aside>
+        </div> <!-- .card__content -->
+      </div>
+    </div>
+  </div>
+

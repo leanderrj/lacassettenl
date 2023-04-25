@@ -1,0 +1,69 @@
+{% comment %}
+	Renders Event Badges (time and download)
+
+	Accepts:
+	- article_object: {Object} Article object
+	- hover_effects: {Boolean} Show some elements on hover only
+	- font_size: Tailwinds class to assign text size
+
+	Usage:
+	{% render 'event-badges',
+			article_object: article
+	%}
+{% endcomment %}
+
+{%- liquid
+	assign CurrentTime = "now" | date: "%b %d, %Y"
+	assign CurrentTimeInUnix = "now" | date: "%s"
+
+	assign EventTime = article_object.metafields.event.date | date: "%b %d, %Y"
+	assign EventTimeInUnix = article_object.metafields.event.date | date : "%s"
+	assign EventEndTime = article_object.metafields.event.date_end | date: "%b %d, %Y"
+	assign EventEndTimeInUnix = article_object.metafields.event.date_end | date : "%s"
+	assign diffSeconds = EventTimeInUnix | minus: CurrentTimeInUnix
+	assign diffNumber = diffSeconds | divided_by: 3600 | divided_by: 24 | round
+
+	assign EventUrl = article_object.metafields.event.link
+	assign EventLink = article_object.metafields.event.link | downcase | url_encode
+
+	if diffNumber < 34
+		assign diffUnits = 'Days'
+		assign diffDays = diffNumber
+	else
+		assign diffUnits = 'Months'
+		assign diffDays = diffNumber | divided_by: 31 | round
+	endif
+
+	assign EventUrl = article_object.metafields.event.link
+	assign EventLink = article_object.metafields.event.link | downcase | url_encode
+
+	if EventLink contains 'wetransfer' or EventLink contains 'we.t'
+		assign EventLinkLabel = 'Download'
+	else
+		assign EventLinkLabel = 'Tickets'
+	endif
+-%}
+
+<div class="lacassette__badges twcss-pb-4 -twcss-mt-16 twcss-z-10">
+	{%- if CurrentTimeInUnix <= EventTimeInUnix and diffNumber != 0 -%}
+		<span class="{{ font_size }} twcss-font-bold twcss-uppercase twcss-p-2 twcss-px-4 twcss-bg-[#efefef] twcss-text-black">In {{ diffDays }} {{ diffUnits }}</span>
+	{%- endif -%}
+
+	{%- if CurrentTimeInUnix > EventTimeInUnix and diffNumber != 0 -%}
+		<span class="{{ font_size }} twcss-font-bold twcss-uppercase twcss-p-2 twcss-px-4 twcss-bg-[#efefef] twcss-text-black">{{ diffDays | remove: '-' }} {{ diffUnits }} ago</span>
+	{%- endif -%}
+
+	{%- if CurrentTimeInUnix > EventTimeInUnix and CurrentTimeInUnix <= EventEndTimeInUnix -%}
+		<span class="{{ font_size }} twcss-font-bold twcss-uppercase twcss-p-2 twcss-px-4 twcss-bg-[#ff0000] twcss-text-white">RIGHT NOW!</span>
+	{%- endif -%}
+
+	{%- if diffNumber == 0 -%}
+		<span class="{{ font_size }} twcss-font-bold twcss-uppercase twcss-p-2 twcss-px-4 twcss-bg-[#ff0000] twcss-text-white">TODAY</span>
+	{%- endif -%}
+
+	{% if article_object.metafields.event.link %}
+		<a class="{% if hover_effects %}group-hover:twcss-inline-block twcss-hidden twcss-float-right {% else %}twcss-top-4 {% endif %} {{ font_size }} twcss-font-bold twcss-uppercase twcss-p-2 twcss-px-4 twcss-bg-[#ff0000] twcss-text-white twcss-relative" href="{{ EventUrl }}" target="_blank" >
+			<span>{{ EventLinkLabel }}</span>
+		</a>
+	{% endif %}
+</div> <!-- .lacassette__badges -->

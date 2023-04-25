@@ -1,112 +1,202 @@
+{%- liquid
+  assign artists = article.metafields.event.artists | split: ' | '
+  assign wiewatwaars = article.metafields.event.wiewatwaar | split: ' | '
+-%}
+
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-  {%- for block in section.blocks -%}
-    {%- case block.type -%}
-      {%- when '@app' -%}
-        <div class="page-width page-width--narrow">
-          {% render block %}
-        </div>
-      {%- when 'featured_image'-%}
-        {%- if article.image -%}
-          <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div class="article-template__hero-{{ block.settings.image_height }} media"
-              itemprop="image"
-              {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
-              <img
-                srcset="{% if article.image.width >= 350 %}{{ article.image | img_url: '350x' }} 350w,{% endif %}
-                  {% if article.image.width >= 750 %}{{ article.image | img_url: '750x' }} 750w,{% endif %}
-                  {% if article.image.width >= 1100 %}{{ article.image | img_url: '1100x' }} 1100w,{% endif %}
-                  {% if article.image.width >= 1500 %}{{ article.image | img_url: '1500x' }} 1500w,{% endif %}
-                  {% if article.image.width >= 2200 %}{{ article.image | img_url: '2200x' }} 2200w,{% endif %}
-                  {% if article.image.width >= 3000 %}{{ article.image | img_url: '3000x' }} 3000w,{% endif %}
-                  {{ article.image | img_url: 'master' }} {{ article.image.width }}w"
+
+<article class="article-template twcss-text-white" itemscope itemtype="http://schema.org/BlogPosting">
+
+<article__inner class="article__inner page-width twcss-grid twcss-grid-cols-1 md:twcss-grid-cols-4 md:twcss-gap-8 ">
+  {% if section.settings.show_article_gallery and article.metafields.cassette.gallery != blank %}
+    <div class="article__gallery twcss-flex md:twcss-col-span-4 twcss-overflow-x-scroll  twcss-h-min ">
+      {% for gallery_image in article.metafields.cassette.gallery.value %}
+          <img
+                class="twcss-object-cover twcss-h-[400px] md:twcss-h-[550px] "
+                srcset="{% if gallery_image.width >= 350 %}{{ gallery_image | image_url: width: 350 }} 350w,{% endif %}
+                  {% if gallery_image.width >= 750 %}{{ gallery_image | image_url: width: 750 }} 750w,{% endif %}
+                  {% if gallery_image.width >= 1100 %}{{ gallery_image | image_url: width: 1100 }} 1100w,{% endif %}
+                  {% if gallery_image.width >= 1500 %}{{ gallery_image | image_url: width: 1500 }} 1500w,{% endif %}
+                  {% if gallery_image.width >= 2200 %}{{ gallery_image | image_url: width: 2200 }} 2200w,{% endif %}
+                  {% if gallery_image.width >= 3000 %}{{ gallery_image | image_url: width: 3000 }} 3000w,{% endif %}
+                  {{ gallery_image | image_url }} {{ gallery_image.width }}w"
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                src="{{ article.image | img_url: '1100x' }}"
+                src="{{ gallery_image | image_url: width: 1100 }}"
                 loading="lazy"
-                width="{{ article.image.width }}"
-                height="{{ article.image.height }}"
-                alt="{{ article.image.alt | escape }}">
+                width="{{ gallery_image.width }}"
+                height="{{ gallery_image.height }}"
+                alt="{{ gallery_image.alt | escape }}">
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if section.settings.show_article_image %}
+    <div class="article__image md:twcss-col-span-4" >
+      <div class="article-template__hero-{{ section.settings.article_image_height }} twcss-max-h-screen twcss-overflow-hidden"
+        itemprop="image"
+        {% if section.settings.article_image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
+      >
+        <img
+          srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+            {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+            {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+            {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+            {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+            {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+            {{ article.image | image_url }} {{ article.image.width }}w"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+          src="{{ article.image | image_url: width: 1100 }}"
+          loading="lazy"
+          width="{{ article.image.width }}"
+          height="{{ article.image.height }}"
+          alt="{{ article.image.alt | escape }}">
+      </div>
+    </div>
+  {% endif %}
+
+
+  <article__content class="article__content md:twcss-col-span-3" >
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          <div class="page-width page-width--narrow">
+            {% render block %}
+          </div>
+
+        {%- when 'featured_image'-%}
+          {%- if article.image -%}
+          {% unless block.settings.full_width %}<div class="article__image twcss-mx-auto md:twcss-col-span-4 twcss-max-w-2xl" style="margin-top: 0;"> {% endunless %}
+
+          <div class="article__hero twcss-row-span-2">
+            <div class="article-template__hero-container" {{ block.shopify_attributes }}>
+              <div class="article-template__hero-{{ block.settings.article_image_height }} media"
+                itemprop="image"
+                {% if block.settings.article_image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
+              >
+                <img
+                  srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                    {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                    {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                    {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                    {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                    {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                    {{ article.image | image_url }} {{ article.image.width }}w"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+                  src="{{ article.image | image_url: width: 1100 }}"
+                  loading="lazy"
+                  width="{{ article.image.width }}"
+                  height="{{ article.image.height }}"
+                  alt="{{ article.image.alt | escape }}">
+              </div>
             </div>
           </div>
-        {%- endif -%}
 
-        {%- when 'title'-%}
-          <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
-            <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
-            {%- if block.settings.blog_show_date -%}
-              <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
-            {%- if block.settings.blog_show_author -%}
-              <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span itemprop="name">{{ article.author }}</span>
-              </span>
-            {%- endif -%}
-          </header>
+          {% unless block.settings.full_width %}</div>{% endunless %}
+          {%- endif -%}
 
-        {%- when 'content'-%}
-          <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
-              {{ article.content }}
-          </div>
+          {%- when 'title'-%}
+            <header class= "article__title {{ block.shopify_attributes }}">
+              <h1 class="article-template__title twcss-font-bold twcss-uppercase" itemprop="headline">{{ article.title | escape }}</h1>
+              {%- if block.settings.blog_show_date -%}
+                <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+              {%- endif -%}
+              {%- if block.settings.blog_show_author -%}
+                <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <span itemprop="name">{{ article.author }}</span>
+                </span>
+              {%- endif -%}
+            </header>
 
-        {%- when 'share' -%}
-          <div class="article-template__social-sharing page-width page-width--narrow" {{ block.shopify_attributes }}>
-            <share-button class="share-button" {{ block.shopify_attributes }}>
-              <button class="share-button__button hidden">
-                {% render 'icon-share' %}
-                {{ block.settings.share_label | escape }}
-              </button>
-              <details>
-                <summary class="share-button__button">
+          {%- when 'content'-%}
+            <div class="article-template__content rte twcss-overflow-hidden" itemprop="articleBody" {{ block.shopify_attributes }}>
+                {{ article.content }}
+            </div>
+
+          {%- when 'share' -%}
+            <div class="article-template__social-sharing twcss-my-4" {{ block.shopify_attributes }}>
+              <share-button class="share-button" {{ block.shopify_attributes }}>
+                <button class="share-button__button hidden">
                   {% render 'icon-share' %}
                   {{ block.settings.share_label | escape }}
-                </summary>
-                <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                  <div class="field">
-                    <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                    </span>
-                    <input type="text"
-                          class="field__input"
-                          id="url"
-                          value="{{ shop.url | append: article.url }}"
-                          placeholder="{{ 'general.share.share_url' | t }}"
-                          onclick="this.select();"
-                          readonly
-                    >
-                    <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                </button>
+                <details id="Details-{{ block.id }}-{{ section.id }}">
+                  <summary class="share-button__button">
+                    {% render 'icon-share' %}
+                    {{ block.settings.share_label | escape }}
+                  </summary>
+                  <div id="Article-share-{{ section.id }}" class="share-button__fallback motion-reduce">
+                    <div class="field">
+                      <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
+                      </span>
+                      <input type="text"
+                            class="field__input"
+                            id="url"
+                            value="{{ request.origin | append: article.url }}"
+                            placeholder="{{ 'general.share.share_url' | t }}"
+                            onclick="this.select();"
+                            readonly
+                      >
+                      <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
+                    </div>
+                    <button class="share-button__close hidden no-js-hidden">
+                      {% render 'icon-close' %}
+                      <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
+                    </button>
+                    <button class="share-button__copy no-js-hidden">
+                      {% render 'icon-clipboard' %}
+                      <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
+                    </button>
                   </div>
-                  <button class="share-button__close hidden no-js-hidden">
-                    {% render 'icon-close' %}
-                    <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                  </button>
-                  <button class="share-button__copy no-js-hidden">
-                    {% render 'icon-clipboard' %}
-                    <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                  </button>
-                </div>
-              </details>
-            </share-button>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-          </div>
-        {%- when 'backlink' -%}
-          <div class="element-margin center">
-            <a href="{{ blog.url }}" class="page-width page-width--narrow article-template__link link animate-arrow{% if blog.comments_enabled? == false %} {% endif %}">
-              <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-              {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
-            </a>
-          </div>
-    {%- endcase -%}
-  {%- endfor -%}
+                </details>
+              </share-button>
+              <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            </div>
+
+          {%- when 'artists'-%}
+            <div class="article-artists rte twcss-overflow-hidden twcss-my-4" itemprop="articleBody" {{ block.shopify_attributes }}>
+              {% for artist in artists %}
+                  <div class="twcss-inline-block twcss-text-2xl twcss-font-bold twcss-p-1 twcss-px-8 twcss-mx-1 twcss-mb-4 twcss-bg-[#ff0000] twcss-text-white">{{ artist | upcase }}</div>
+              {% endfor %}
+            </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </article__content>
+
+  <aside class="article__meta twcss-flex twcss-flex-row md:twcss-flex-col twcss-justify-between md:twcss-justify-start md:twcss-col-start-4 md:twcss-pl-8 md:twcss-w-60">
+    <div class="event_badges twcss-mt-16">
+      {% render 'event-badges',
+        article_object: article,
+        font_size: 'twcss-text-lg'
+      %}
+    </div>
+
+    <div class="event_meta twcss-mt-10" >
+      {% if wiewatwaars != blank %}
+        <h3 class="twcss-text-3xl twcss-font-bold">INFO</h3>
+      {% endif %}
+      {% for wiewatwaar in wiewatwaars %}
+          <div class="article-wiewatwaar twcss-text-2xl twcss-py-2 twcss-text-white twcss-border-t-[1px] twcss-w-60 ">{{ wiewatwaar }}</div>
+      {% endfor %}
+    </div>
+
+  </aside>
+</article__inner>
 
 
+  <div class="article-template__back element-margin-top center">
+    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
+      <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+      {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+    </a>
+  </div>
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div id="comments" class="page-width page-width--narrow">
         {%- if article.comments_count > 0 -%}
           {%- assign anchorId = '#Comments-' | append: article.id -%}
 
-          <h2 id="Comments-{{ article.id }}">{{ 'blogs.article.comments' | t: count: article.comments_count }}</h2>
+          <h2 id="Comments-{{ article.id }}" tabindex="-1">{{ 'blogs.article.comments' | t: count: article.comments_count }}</h2>
           {% paginate article.comments by 5 %}
             <div class="article-template__comments">
               {%- if comment.status == 'pending' and comment.content -%}
@@ -140,7 +230,7 @@
           <h2>{{ 'blogs.article.comment_form_title' | t }}</h2>
           {%- if form.errors -%}
             <div class="form__message" role="alert">
-              <h3 class="form-status caption-large" tabindex="-1" autofocus>
+              <h3 class="form-status caption-large text-body" tabindex="-1" autofocus>
                 {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
               </h3>
             </div>
@@ -177,6 +267,7 @@
                   autocomplete="name"
                   value="{{ form.author }}"
                   aria-required="true"
+                  required
                   {% if form.errors contains 'author' %}
                     aria-invalid="true"
                     aria-describedby="CommentForm-author-error"
@@ -201,6 +292,7 @@
                   autocorrect="off"
                   autocapitalize="off"
                   aria-required="true"
+                  required
                   {% if form.errors contains 'email' %}
                     aria-invalid="true"
                     aria-describedby="CommentForm-email-error"
@@ -222,6 +314,7 @@
                 id="CommentForm-body"
                 class="text-area field__input"
                 aria-required="true"
+                required
                 {% if form.errors contains 'body' %}
                   aria-invalid="true"
                   aria-describedby="CommentForm-body-error"
@@ -246,147 +339,6 @@
   {%- endif -%}
 </article>
 
-
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
-
-{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
-
-{% if article.metafields.fatcrayon.gallery != blank %}
-  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
-  {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-  <div class="article__gallery page-width ">
-
-    <slider-component class="slider-mobile-gutter">
-      <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
-        {{ "accessibility.skip_to_product_info" | t }}
-      </a>
-
-      <ul class="product__media-list grid grid--2-col grid--peek list-unstyled slider slider--mobile" role="list">
-        {% for image in article.metafields.fatcrayon.gallery %}
-          <li
-            class="product__media-item grid__item slider__slide product__media-item--full"
-            data-media-id="{{ image.id }}">
-
-            <modal-opener class="product__modal-opener product__modal-opener--image no-js-hidden" data-modal="#ProductModal-{{ section.id }}">
-              <span class="product__media-icon motion-reduce hidden" aria-hidden="true">
-                {%- render 'icon-zoom' -%}
-              </span>
-
-              <div class="product__media media media--transparent" style="padding-top: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;">
-                <img
-                  class="grid_image"
-                  loading="lazy"
-                  src="{{ image.src }}"
-                  alt="{{ image.alt | escape }}"
-                  width="{{ image.width }}"
-                  height="{{ image.height }}"
-                >
-              </div>
-              <button class="product__media-toggle" type="button" aria-haspopup="dialog" data-media-id="{{ image.id }}">
-                <span class="visually-hidden">
-                  {{ 'products.product.media.open_media' | t: index: position }}
-                </span>
-              </button>
-            </modal-opener>
-          </li>
-        {%- endfor -%}
-      </ul>
-
-      <div class="slider-buttons no-js-hidden{% if article.metafields.fatcrayon.gallery.size < 2 %} small-hide{% endif %}">
-        <button type="button" class="slider-button slider-button--prev" name="previous"
-          aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-        <div class="slider-counter caption">
-          <span class="slider-counter--current">1</span>
-          <span aria-hidden="true"> / </span>
-          <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-          <span class="slider-counter--total">{{ article.metafields.fatcrayon.gallery.size }}</span>
-        </div>
-        <button type="button" class="slider-button slider-button--next" name="next"
-          aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-      </div>
-    </slider-component>
-  </div>
-
-  <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
-    <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
-      <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
-
-      <div class="product-media-modal__content" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
-        {%- liquid
-          if product.selected_or_first_available_variant.featured_media != null
-            assign media = product.selected_or_first_available_variant.featured_media
-            render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
-          endif
-        -%}
-
-        {% for image in article.metafields.fatcrayon.gallery %}
-          <div
-            class="product__media media active"
-            style="padding-top: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;"
-            data-media-id="{{ image.id }}"
-          >
-              <img
-                class="grid_image"
-                loading="lazy"
-                src="{{ image.src }}"
-                alt="{{ image.alt | escape }}"
-                width="{{ image.width }}"
-                height="{{ image.height }}"
-                data-media-id="{{ image.id }}"
-              />
-          </div>
-        {%- endfor -%}
-
-      </div>
-    </div>
-  </product-modal>
-{% endif %}
-
-{% javascript %}
-  class ProductModal extends ModalDialog {
-    constructor() {
-      super();
-    }
-
-    hide() {
-      super.hide();
-    }
-
-    show(opener) {
-      super.show(opener);
-      this.showActiveMedia();
-    }
-
-    showActiveMedia() {
-      
-      const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
-      const activeMediaTemplate = activeMedia.querySelector('template');
-      const activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
-      activeMedia.classList.add('active');
-      activeMedia.scrollIntoView();
-
-      const container = this.querySelector('[role="document"]');
-      container.scrollLeft = (activeMedia.width - container.clientWidth) / 2;
-
-      if (activeMedia.nodeName == 'DEFERRED-MEDIA' && activeMediaContent && activeMediaContent.querySelector('.js-youtube'))
-        activeMedia.loadContent();
-    }
-  }
-
-  customElements.define('product-modal', ProductModal);
-{% endjavascript %}
-
-
-<div class="element-margin element-margin-bottom center">
-  <a href="{{ blog.url }}" class="page-width page-width--narrow article-template__link link animate-arrow{% if blog.comments_enabled? == false %} {% endif %}">
-    <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-    {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
-  </a>
-</div>
-
-
-
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -394,16 +346,15 @@
     "articleBody": {{ article.content | strip_html | json }},
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": {{ shop.url | append: page.url | json }}
+      "@id": {{ request.origin | append: page.url | json }}
     },
     "headline": {{ article.title | json }},
     {% if article.excerpt != blank %}
       "description": {{ article.excerpt | strip_html | json }},
     {% endif %}
     {% if article.image %}
-      {% assign image_size = article.image.width | append: 'x' %}
       "image": [
-        {{ article | img_url: image_size | prepend: "https:" | json }}
+        {{ article | image_url: width: article.image.width | prepend: "https:" | json }}
       ],
     {% endif %}
     "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
@@ -415,24 +366,67 @@
     "publisher": {
       "@type": "Organization",
       {% if settings.share_image %}
-        {% assign image_size = settings.share_image.width | append: 'x' %}
         "logo": {
           "@type": "ImageObject",
           "height": {{ settings.share_image.height | json }},
-          "url": {{ settings.share_image | img_url: image_size | prepend: "https:" | json }},
+          "url": {{ settings.share_image | image_url: width: settings.share_image.width | prepend: "https:" | json }},
           "width": {{ settings.share_image.width | json }}
         },
       {% endif %}
       "name": {{ shop.name | json }}
     }
   }
-</script>
+  </script>
 
 
 {% schema %}
 {
   "name": "t:sections.main-article.name",
   "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_article_gallery",
+      "default": true,
+      "label": "Show article gallery"
+    },
+    {
+      "type": "header",
+      "content": "Featured Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_article_image",
+      "default": true,
+      "label": "Show article image"
+    },
+    {
+      "type": "select",
+      "id": "article_image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.main-article.blocks.featured_image.settings.image_height.label",
+      "info": "t:sections.main-article.blocks.featured_image.settings.image_height.info"
+    }
+  ],
   "blocks": [
     {
       "type": "@app"
@@ -442,6 +436,12 @@
       "name": "t:sections.main-article.blocks.featured_image.name",
       "limit": 1,
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "full_width",
+          "default": false,
+          "label": "t:sections.rich-text.settings.full_width.label"
+        },
         {
           "type": "select",
           "id": "image_height",
@@ -494,9 +494,14 @@
       "limit": 1
     },
     {
+      "type": "artists",
+      "name": "Artist",
+      "limit": 1
+    },
+    {
       "type": "share",
       "name": "t:sections.main-article.blocks.share.name",
-      "limit": 2,
+      "limit": 1,
       "settings": [
         {
           "type": "text",
@@ -513,11 +518,6 @@
           "content": "t:sections.main-article.blocks.share.settings.title_info.content"
         }
       ]
-    },
-    {
-      "type": "backlink",
-      "name": "Backlink",
-      "limit": 1
     }
   ]
 }

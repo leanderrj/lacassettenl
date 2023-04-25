@@ -1,27 +1,71 @@
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
-{{ 'component-main-grid.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- paginate blog.articles by 6 -%}
+  <div class="main-blog page-width section-{{ section.id }}-padding">
 
 
-{%- paginate blog.articles by 50 -%}
 
-  <div class="main-blog page-width">
 
-    <div class="main-grid {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-      {%- for article in blog.articles -%}
-        <div class="grid-item grid-item__article article">
-          {%- render 'article-card',
-                article: article,
-                image_height: section.settings.image_height,
-                show_image: section.settings.show_image,
-                show_date: section.settings.show_date,
-                show_author: section.settings.show_author
-          -%}
-        </div>
-      {%- endfor -%}
+    {% if section.settings.layout == 'lacassette_card' %}
+      <div class="
+          twcss-grid
+          twcss-grid-cols-2 md:twcss-grid-cols-4
+          twcss-gap-8 md:twcss-gap-x-20 md:twcss-gap-y-20
+          twcss-pt-8 md:twcss-px-6
+          md:twcss-min-w-[680px] lg:twcss-min-w-[900px] xl:twcss-min-w-[1100px]
+        ">
 
-    </div>
+        {%- for article in blog.articles -%}
+          <div class="{% if block.settings.featured_block == true %}featured__item md:twcss-w-[295px] twcss-z-20 {% endif %}
+                cassette-grid__item {{ block.type }}
+                twcss-inline-block hover:twcss-scale-100 hover:twcss-z-20"
+          >
+            {% render 'card-blogpost',
+              article_link: article,
+              card_article_object: article,
+              media_aspect_ratio: "square",
+              card_article: "/blogs/",
+              hover_effect: false,
+              blog_article: true
+            %}
+          </div>
+        {%- endfor -%}
+      </div> <!-- .grid -->
+
+    {% else %}
+      <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+        {%- for article in blog.articles -%}
+          <div class="blog-articles__article article">
+            {%- render 'article-card',
+              article: article,
+              media_height: section.settings.image_height,
+              media_aspect_ratio: article.image.aspect_ratio,
+              show_image: section.settings.show_image,
+              show_date: section.settings.show_date,
+              show_author: section.settings.show_author,
+              show_excerpt: true
+            -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {% endif %}
+
 
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
@@ -33,7 +77,7 @@
 {
   "name": "t:sections.main-blog.name",
   "tag": "section",
-  "class": "spaced-section",
+  "class": "section",
   "settings": [
     {
       "type": "header",
@@ -50,10 +94,15 @@
         {
           "value": "collage",
           "label": "t:sections.main-blog.settings.layout.options__2.label"
+        },
+        {
+          "value": "lacassette_card",
+          "label": "Special La Cassette Cards"
         }
       ],
       "default": "collage",
-      "label": "t:sections.main-blog.settings.layout.label"
+      "label": "t:sections.main-blog.settings.layout.label",
+      "info": "t:sections.main-blog.settings.layout.info"
     },
     {
       "type": "checkbox",
@@ -90,7 +139,7 @@
       "type": "checkbox",
       "id": "show_date",
       "default": true,
-      "label": "t:sections.main-blog.settings.show_date.label"
+      "label": "Show post date"
     },
     {
       "type": "checkbox",
@@ -101,6 +150,30 @@
     {
       "type": "paragraph",
       "content": "t:sections.main-blog.settings.paragraph.content"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
     }
   ]
 }
