@@ -44,7 +44,7 @@
 	endif
 -%}
 
-<div class="lacassette__badges twcss-pb-4 -twcss-mt-16 twcss-z-10">
+<div class="lacassette__badges twcss-pb-4 -twcss-mt-16">
 	{%- if CurrentTimeInUnix <= EventTimeInUnix and diffNumber != 0 -%}
 		<span class="{{ font_size }} twcss-font-bold twcss-uppercase twcss-p-2 twcss-px-4 twcss-bg-[#efefef] twcss-text-black">In {{ diffDays }} {{ diffUnits }}</span>
 	{%- endif -%}
