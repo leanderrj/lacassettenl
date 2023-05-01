@@ -122,7 +122,11 @@
     padding-bottom: 1.7rem;
     padding-top: 1.7rem;
   }
+  .lacassette__badges {
+    z-index: 4;
+  }
 }
+
 
 .card__badge {
   align-self: flex-end;

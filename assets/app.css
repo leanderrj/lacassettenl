@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -30,6 +30,8 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -44,6 +46,10 @@ html {
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -186,6 +192,8 @@ textarea {
   font-family: inherit;
   /* 1 */
   font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
   /* 1 */
   line-height: inherit;
   /* 1 */
@@ -353,13 +361,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -415,15 +416,15 @@ video {
   height: auto;
 }
 
-/*
-Ensure the default browser behavior of the `hidden` attribute.
-*/
+/* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden] {
   display: none;
 }
 
 *, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -468,42 +469,51 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.twcss-container {
-  width: 100%;
-}
-
-@media (min-width: 320px) {
-  .twcss-container {
-    max-width: 320px;
-  }
-}
-
-@media (min-width: 750px) {
-  .twcss-container {
-    max-width: 750px;
-  }
-}
-
-@media (min-width: 990px) {
-  .twcss-container {
-    max-width: 990px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .twcss-container {
-    max-width: 1440px;
-  }
-}
-
-@media (min-width: 1920px) {
-  .twcss-container {
-    max-width: 1920px;
-  }
-}
-
-.twcss-fixed {
-  position: fixed;
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
 }
 
 .twcss-absolute {
@@ -514,12 +524,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
-.twcss-left-1\/2 {
-  left: 50%;
-}
-
 .twcss-bottom-\[-43px\] {
   bottom: -43px;
+}
+
+.twcss-left-1\/2 {
+  left: 50%;
 }
 
 .twcss-top-4 {
@@ -530,16 +540,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
-.twcss-z-10 {
-  z-index: 10;
-}
-
 .twcss-row-span-2 {
   grid-row: span 2 / span 2;
 }
 
 .twcss-float-right {
   float: right;
+}
+
+.twcss-mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .twcss-mx-auto {
@@ -552,27 +563,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
-.twcss-mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.twcss-mt-8 {
-  margin-top: 2rem;
-}
-
-.twcss-mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.twcss-mt-16 {
-  margin-top: 4rem;
-}
-
-.twcss-mb-\[55px\] {
-  margin-bottom: 55px;
-}
-
 .-twcss-mt-16 {
   margin-top: -4rem;
 }
@@ -581,32 +571,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 5rem;
 }
 
-.twcss-mb-24 {
-  margin-bottom: 6rem;
-}
-
 .twcss-mb-4 {
   margin-bottom: 1rem;
 }
 
-.twcss-mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.twcss-mt-4 {
-  margin-top: 1rem;
-}
-
-.twcss-mt-14 {
-  margin-top: 3.5rem;
+.twcss-mb-\[55px\] {
+  margin-bottom: 55px;
 }
 
 .twcss-mt-10 {
   margin-top: 2.5rem;
 }
 
-.twcss-block {
-  display: block;
+.twcss-mt-16 {
+  margin-top: 4rem;
 }
 
 .twcss-inline-block {
@@ -629,72 +607,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 16 / 9;
 }
 
-.twcss-h-96 {
-  height: 24rem;
-}
-
-.twcss-h-full {
-  height: 100%;
-}
-
-.twcss-h-\[450px\] {
-  height: 450px;
+.twcss-h-0 {
+  height: 0px;
 }
 
 .twcss-h-\[400px\] {
   height: 400px;
 }
 
-.twcss-h-0 {
-  height: 0px;
-}
-
 .twcss-h-min {
-  height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-}
-
-.twcss-max-h-20 {
-  max-height: 5rem;
 }
 
 .twcss-max-h-screen {
   max-height: 100vh;
 }
 
-.twcss-max-h-24 {
-  max-height: 6rem;
-}
-
-.twcss-max-h-16 {
-  max-height: 4rem;
-}
-
-.twcss-max-h-\[550px\] {
-  max-height: 550px;
-}
-
 .twcss-min-h-\[126px\] {
   min-height: 126px;
-}
-
-.twcss-min-h-screen {
-  min-height: 100vh;
-}
-
-.twcss-min-h-fit {
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
-.twcss-min-h-full {
-  min-height: 100%;
-}
-
-.twcss-w-full {
-  width: 100%;
 }
 
 .twcss-w-60 {
@@ -703,6 +634,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-w-\[320px\] {
   width: 320px;
+}
+
+.twcss-w-full {
+  width: 100%;
 }
 
 .twcss-w-screen {
@@ -717,30 +652,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 42rem;
 }
 
-.twcss-max-w-md {
-  max-width: 28rem;
+.twcss-max-w-\[280px\] {
+  max-width: 280px;
 }
 
 .twcss-max-w-full {
   max-width: 100%;
 }
 
-.twcss-max-w-\[280px\] {
-  max-width: 280px;
+.twcss-max-w-md {
+  max-width: 28rem;
+}
+
+.twcss-max-w-screen-xlg {
+  max-width: 1440px;
 }
 
 .-twcss-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.twcss-snap-x {
-  -ms-scroll-snap-type: x var(--tw-scroll-snap-strictness);
-      scroll-snap-type: x var(--tw-scroll-snap-strictness);
-}
-
-.twcss-snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
 }
 
 .twcss-grid-cols-1 {
@@ -787,10 +717,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-x: auto;
 }
 
-.twcss-overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .twcss-overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -799,12 +725,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 3px;
 }
 
-.twcss-border-t-2 {
-  border-top-width: 2px;
-}
-
 .twcss-border-t-\[1px\] {
   border-top-width: 1px;
+}
+
+.twcss-bg-\[\#efefef\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 239 239 / var(--tw-bg-opacity));
 }
 
 .twcss-bg-\[\#ff0000\] {
@@ -817,52 +744,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.twcss-bg-\[\#efefef\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 239 239 / var(--tw-bg-opacity));
-}
-
-.twcss-object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .twcss-object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.twcss-p-2 {
-  padding: 0.5rem;
 }
 
 .twcss-p-1 {
   padding: 0.25rem;
 }
 
-.twcss-px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.twcss-px-\[20px\] {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.twcss-px-\[18px\] {
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-.twcss-px-\[10px\] {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.twcss-py-\[5px\] {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.twcss-p-2 {
+  padding: 0.5rem;
 }
 
 .twcss-px-4 {
@@ -870,9 +762,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.twcss-px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.twcss-px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.twcss-px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.twcss-px-\[18px\] {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.twcss-px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .twcss-py-2 {
@@ -880,48 +787,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.twcss-pt-8 {
-  padding-top: 2rem;
-}
-
-.twcss-pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.twcss-pt-2 {
-  padding-top: 0.5rem;
-}
-
-.twcss-pb-\[40px\] {
-  padding-bottom: 40px;
-}
-
-.twcss-pt-\[30px\] {
-  padding-top: 30px;
-}
-
-.twcss-pt-\[25px\] {
-  padding-top: 25px;
-}
-
-.twcss-pb-\[20px\] {
-  padding-bottom: 20px;
-}
-
-.twcss-pt-\[10px\] {
-  padding-top: 10px;
-}
-
-.twcss-pb-\[30px\] {
-  padding-bottom: 30px;
+.twcss-py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .twcss-pb-4 {
   padding-bottom: 1rem;
 }
 
-.twcss-pt-4 {
-  padding-top: 1rem;
+.twcss-pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
+.twcss-pb-\[30px\] {
+  padding-bottom: 30px;
+}
+
+.twcss-pb-\[40px\] {
+  padding-bottom: 40px;
+}
+
+.twcss-pt-8 {
+  padding-top: 2rem;
+}
+
+.twcss-pt-\[10px\] {
+  padding-top: 10px;
+}
+
+.twcss-pt-\[25px\] {
+  padding-top: 25px;
+}
+
+.twcss-pt-\[30px\] {
+  padding-top: 30px;
 }
 
 .twcss-text-center {
@@ -942,9 +842,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.twcss-text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.twcss-text-\[65px\] {
+  font-size: 65px;
+}
+
+.twcss-text-\[70px\] {
+  font-size: 70px;
 }
 
 .twcss-text-base {
@@ -952,17 +855,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
-.twcss-text-xl {
-  font-size: 1.25rem;
+.twcss-text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.twcss-text-\[70px\] {
-  font-size: 70px;
-}
-
-.twcss-text-\[65px\] {
-  font-size: 65px;
+.twcss-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .twcss-font-bold {
@@ -977,33 +877,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
-.twcss-text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .twcss-text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.twcss-text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .twcss-opacity-0 {
   opacity: 0;
-}
-
-.twcss-shadow-\[0_-50px_36px_-28px_insetrgba\(0\,0\,0\,0\.35\)\] {
-  --tw-shadow: 0 -50px 36px -28px insetrgba(0,0,0,0.35);
-  --tw-shadow-colored: 0 -50px 36px -28px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.twcss-scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.twcss-scrollbar-hide::-webkit-scrollbar {
-  display: none;
 }
 
 .hover\:twcss-z-20:hover {
@@ -1033,16 +918,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: inline-block;
 }
 
-.twcss-group:hover .group-hover\:twcss-h-24 {
-  height: 6rem;
-}
-
 .twcss-group:hover .group-hover\:twcss-h-20 {
   height: 5rem;
-}
-
-.twcss-group:hover .group-hover\:twcss-h-\[50px\] {
-  height: 50px;
 }
 
 .twcss-group:hover .group-hover\:twcss-bg-black {
@@ -1066,28 +943,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 750px) {
-  .md\:twcss-top-4 {
-    top: 1rem;
-  }
-
-  .md\:twcss-col-span-4 {
-    grid-column: span 4 / span 4;
+  .md\:twcss-z-20 {
+    z-index: 20;
   }
 
   .md\:twcss-col-span-3 {
     grid-column: span 3 / span 3;
   }
 
+  .md\:twcss-col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .md\:twcss-col-start-4 {
     grid-column-start: 4;
-  }
-
-  .md\:twcss-row-span-2 {
-    grid-row: span 2 / span 2;
-  }
-
-  .md\:twcss-row-start-2 {
-    grid-row-start: 2;
   }
 
   .md\:twcss-mb-0 {
@@ -1106,46 +975,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: grid;
   }
 
-  .md\:twcss-h-\[450px\] {
-    height: 450px;
-  }
-
   .md\:twcss-h-\[550px\] {
     height: 550px;
-  }
-
-  .md\:twcss-max-h-fit {
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-  }
-
-  .md\:twcss-min-h-screen {
-    min-height: 100vh;
-  }
-
-  .md\:twcss-w-80 {
-    width: 20rem;
-  }
-
-  .md\:twcss-w-\[260px\] {
-    width: 260px;
   }
 
   .md\:twcss-w-60 {
     width: 15rem;
   }
 
-  .md\:twcss-w-auto {
-    width: auto;
+  .md\:twcss-w-80 {
+    width: 20rem;
   }
 
   .md\:twcss-w-\[295px\] {
     width: 295px;
   }
 
-  .md\:twcss-w-\[180px\] {
-    width: 180px;
+  .md\:twcss-w-auto {
+    width: auto;
   }
 
   .md\:twcss-min-w-\[680px\] {
@@ -1162,14 +1009,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:twcss-grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:twcss-flex-row {
-    flex-direction: row;
   }
 
   .md\:twcss-flex-col {
@@ -1214,22 +1053,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 1.5rem;
   }
 
-  .md\:twcss-px-\[52px\] {
-    padding-left: 52px;
-    padding-right: 52px;
-  }
-
   .md\:twcss-px-\[10\%\] {
     padding-left: 10%;
     padding-right: 10%;
   }
 
-  .md\:twcss-pr-12 {
-    padding-right: 3rem;
+  .md\:twcss-px-\[52px\] {
+    padding-left: 52px;
+    padding-right: 52px;
   }
 
   .md\:twcss-pl-8 {
     padding-left: 2rem;
+  }
+
+  .md\:twcss-pr-12 {
+    padding-right: 3rem;
   }
 
   .md\:twcss-pt-\[85px\] {
@@ -1239,16 +1078,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:twcss-text-\[75px\] {
     font-size: 75px;
   }
+
+  .hover\:md\:twcss-z-20:hover {
+    z-index: 20;
+  }
 }
 
 @media (min-width: 990px) {
   .lg\:twcss-min-w-\[900px\] {
     min-width: 900px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .xl\:twcss-min-w-\[1100px\] {
-    min-width: 1100px;
   }
 }
