@@ -89,6 +89,7 @@
 
 .card__inner {
   width: 100%;
+  /* z-index: -5; */
 }
 
 .card--media .card__inner .card__content {
@@ -121,9 +122,6 @@
   .card__information {
     padding-bottom: 1.7rem;
     padding-top: 1.7rem;
-  }
-  .lacassette__badges {
-    z-index: 4;
   }
 }
 

@@ -540,6 +540,14 @@ video {
   z-index: 20;
 }
 
+.-twcss-z-10 {
+  z-index: -10;
+}
+
+.twcss-z-10 {
+  z-index: 10;
+}
+
 .twcss-row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -899,6 +907,10 @@ video {
   z-index: 40;
 }
 
+.hover\:twcss-z-10:hover {
+  z-index: 10;
+}
+
 .hover\:twcss-scale-100:hover {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -945,6 +957,10 @@ video {
 @media (min-width: 750px) {
   .md\:twcss-z-20 {
     z-index: 20;
+  }
+
+  .md\:twcss-z-10 {
+    z-index: 10;
   }
 
   .md\:twcss-col-span-3 {
@@ -1081,6 +1097,10 @@ video {
 
   .hover\:md\:twcss-z-20:hover {
     z-index: 20;
+  }
+
+  .hover\:md\:twcss-z-10:hover {
+    z-index: 10;
   }
 }
 

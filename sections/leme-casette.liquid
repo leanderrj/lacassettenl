@@ -111,7 +111,7 @@
 		<div id="{{ block.type }}-{{ forloop.index }}"
 				class="{% if block.settings.featured_block == true %}featured__item{% endif %}
 						cassette-grid__item {{ block.type }}
-						twcss-inline-block hover:twcss-scale-100 hover:twcss-z-20"
+						twcss-inline-block hover:twcss-scale-100 hover:twcss-z-10"
 			style="position: relative;
 						top: {{ block.settings.margin_top }}px;
 						right: {{ block.settings.margin_right }}px;
@@ -136,11 +136,11 @@
 
 		{% if block.type == 'blogpost_block' %}
 
-			<div class="{% if block.settings.featured_block == true %}featured__item md:twcss-w-[295px] md:twcss-z-20 {% endif %}
+			<div class="{% if block.settings.featured_block == true %}featured__item md:twcss-w-[295px] md:twcss-z-10 {% endif %}
 						cassette-grid__item {{ block.type }}
-						twcss-inline-block hover:twcss-scale-100 hover:md:twcss-z-20"
+						twcss-inline-block hover:twcss-scale-100 hover:twcss-z-20"
 
-					style="--card_margin: {{ block.settings.margin_top }}px {{ block.settings.margin_right }}px {{ block.settings.margin_bottom }}px {{ block.settings.margin_left }}px ;"
+					style="--card_margin: {{ block.settings.margin_top }}px {{ block.settings.margin_right }}px {{ block.settings.margin_bottom }}px {{ block.settings.margin_left }}px; "
 			>
 				{% render 'card-blogpost',
 					card_article: block.settings.article,
@@ -191,7 +191,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		z-index: -1;
+		z-index: -30;
 		pointer-events: none;
 		overflow: hidden;
 		height: 100vh;
@@ -229,6 +229,7 @@
 	@media screen and (min-width: 750px) {
 		.cassette-grid__item {
 			margin: var(--card_margin)
+			z-index: -1;
 		}
 
 		.section-{{ section.id }}-padding {
@@ -247,6 +248,10 @@
 			top: 25vh;
 			right: 60ch;
 		}
+	}
+
+	.cassette-grid__item .card__inner {
+		z-index: -5;
 	}
 
 
