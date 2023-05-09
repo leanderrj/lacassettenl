@@ -1,1 +1,515 @@
-{"sections":{"main":{"type":"main-blog","disabled":true,"settings":{"layout":"collage","show_image":true,"image_height":"medium","show_date":true,"show_author":false,"padding_top":36,"padding_bottom":36}},"cbca86c4-d49f-4d46-9a8f-6220ebc36b5c":{"type":"leme-casette","blocks":{"94652b54-eaed-439e-9b76-7d714b3eda21":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnight-2","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"b1de2f37-c35d-4f06-b720-c4c8c353aa06":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnight-1","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"393e767e-a5ba-4d9a-9300-3a231046e865":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/you-aint-seen-nothing-yet-a-la-cassette-documentary","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"0021d154-64e0-4927-9ffd-923954373c85":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/events\/clubnight","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"c6ce4e8f-ae34-4b34-9b3f-503cdd44f8e2":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/gaat-movie-rogier-de-reiger","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"c9e6856b-f6d5-4636-bd51-6a4ebd2eb4c8":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/nye-wild-wilder-weelde","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"90ca7df5-7dd4-4222-8f51-8e1932837104":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnight","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"1cb30942-937f-4835-ae62-eb30560ece75":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/gaat-movie-sami-el-hassini","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"cb0e0277-43ce-43a4-b105-56c8dfa406e3":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/summerre-2","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"8c53dcb0-847a-4d6e-a4e5-f2979366294f":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/summerre-1","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"37a6d8e1-f7e7-4e50-8442-745a422eea0f":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/centraal-laat","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"888e68ef-8790-41a9-b0a1-34518157ff1d":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/fysical-flyer-woohah-x-rolling-loud-2022","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"c95f5eb4-21e5-4e5e-a426-f58752ed3b95":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnacht-3","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"2dd6e53e-89aa-4b96-9fbe-71947d1e6819":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/woohah","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"c5133e0b-ee73-41c3-a650-df927bfba64c":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/shining-our-light-into-the-darkness-campaign","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"8314ecd9-3a0b-4daf-bb9e-738164c46766":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnacht-2","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"ec708413-72f9-4c9d-bbf2-f754959b271e":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/gaat-movie-camille-boumans","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"330b332d-3156-4bb9-953c-9ffbd3d69da0":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/lacalolly","margin_top":100,"margin_right":-8,"margin_bottom":-8,"margin_left":-8}},"f27784ef-42b1-4293-a782-aa38af2fd6fa":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/gaat-movie-malika-helena-de-rijke","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"7a9dcd22-20ed-4a18-803b-d2429b79431f":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnacht-1","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"7e399cee-f620-41e5-afe4-c4de021d7657":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/a-public-service-announcement","margin_top":32,"margin_right":-16,"margin_bottom":96,"margin_left":-16}},"2cc1c029-2cdc-4f6c-b66e-5b1fe97399d6":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/gaat-movie-suzanne-koopstra","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"a297909a-ceb2-4847-aefb-fc1e6d4f2ead":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/gaat-movie-1","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"6a8ff93c-f3df-405d-bf5a-37dbb37ddc7a":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/an-evening-with-la-cassette-2","margin_top":-40,"margin_right":-12,"margin_bottom":56,"margin_left":0}},"88ace52a-2097-4fee-acd2-24fb592234a7":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/an-evening-with-la-cassette","margin_top":40,"margin_right":4,"margin_bottom":-32,"margin_left":-24}},"a15dd849-a870-405b-8b53-988ba30fcdfe":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/a-tajine-dream","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"1770d8de-f51e-4269-8897-75d9ffc46a47":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/la-cassette-roffa","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"9dc4da25-a323-4936-ad19-2ce429cdf3dd":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/summ3-1","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"bd4e96fb-fbae-4d0c-8953-9660bbf5dfa9":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/summerre-burning-feet-exposition","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"2fc054c3-4e60-4746-bb4c-c50f9119076a":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/far-from-done-sweatshirt-campaign","margin_top":36,"margin_right":8,"margin_bottom":-32,"margin_left":-16}},"feca3830-c278-42c4-9d4d-6216676f23c9":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/d","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"1579e672-68dd-4ba9-a215-f607d4431e94":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/from-the-big-u-shawl-campaign-with-noble-goods-co","margin_top":-40,"margin_right":-20,"margin_bottom":-40,"margin_left":52}},"101bfaeb-6ae0-4c6b-a910-0d10b0be7a2b":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko-4","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"f0177618-fa05-46d2-8ee6-ffd766a5fb8a":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko-3","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"0fd4d71f-5bfa-48ea-961f-ac0d60a7e016":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/filmcafe-2","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"244c3f6b-59bc-4a7b-a38c-6f63a27746e3":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"d7f5fc12-f893-43fd-8222-634108c75afb":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/film-cafe-1","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}}},"block_order":["94652b54-eaed-439e-9b76-7d714b3eda21","b1de2f37-c35d-4f06-b720-c4c8c353aa06","393e767e-a5ba-4d9a-9300-3a231046e865","0021d154-64e0-4927-9ffd-923954373c85","c6ce4e8f-ae34-4b34-9b3f-503cdd44f8e2","c9e6856b-f6d5-4636-bd51-6a4ebd2eb4c8","90ca7df5-7dd4-4222-8f51-8e1932837104","1cb30942-937f-4835-ae62-eb30560ece75","cb0e0277-43ce-43a4-b105-56c8dfa406e3","8c53dcb0-847a-4d6e-a4e5-f2979366294f","37a6d8e1-f7e7-4e50-8442-745a422eea0f","888e68ef-8790-41a9-b0a1-34518157ff1d","c95f5eb4-21e5-4e5e-a426-f58752ed3b95","2dd6e53e-89aa-4b96-9fbe-71947d1e6819","c5133e0b-ee73-41c3-a650-df927bfba64c","8314ecd9-3a0b-4daf-bb9e-738164c46766","ec708413-72f9-4c9d-bbf2-f754959b271e","330b332d-3156-4bb9-953c-9ffbd3d69da0","f27784ef-42b1-4293-a782-aa38af2fd6fa","7a9dcd22-20ed-4a18-803b-d2429b79431f","7e399cee-f620-41e5-afe4-c4de021d7657","2cc1c029-2cdc-4f6c-b66e-5b1fe97399d6","a297909a-ceb2-4847-aefb-fc1e6d4f2ead","6a8ff93c-f3df-405d-bf5a-37dbb37ddc7a","88ace52a-2097-4fee-acd2-24fb592234a7","a15dd849-a870-405b-8b53-988ba30fcdfe","1770d8de-f51e-4269-8897-75d9ffc46a47","9dc4da25-a323-4936-ad19-2ce429cdf3dd","bd4e96fb-fbae-4d0c-8953-9660bbf5dfa9","2fc054c3-4e60-4746-bb4c-c50f9119076a","feca3830-c278-42c4-9d4d-6216676f23c9","1579e672-68dd-4ba9-a215-f607d4431e94","101bfaeb-6ae0-4c6b-a910-0d10b0be7a2b","f0177618-fa05-46d2-8ee6-ffd766a5fb8a","0fd4d71f-5bfa-48ea-961f-ac0d60a7e016","244c3f6b-59bc-4a7b-a38c-6f63a27746e3","d7f5fc12-f893-43fd-8222-634108c75afb"],"settings":{"video_url":"https:\/\/vimeo.com\/719896098","full_width":true,"padding_top":40,"padding_bottom":52}}},"order":["main","cbca86c4-d49f-4d46-9a8f-6220ebc36b5c"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
+      "type": "leme-casette",
+      "blocks": {
+        "94652b54-eaed-439e-9b76-7d714b3eda21": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-2",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "b1de2f37-c35d-4f06-b720-c4c8c353aa06": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-1",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "393e767e-a5ba-4d9a-9300-3a231046e865": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/you-aint-seen-nothing-yet-a-la-cassette-documentary",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "0021d154-64e0-4927-9ffd-923954373c85": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "c6ce4e8f-ae34-4b34-9b3f-503cdd44f8e2": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/gaat-movie-rogier-de-reiger",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "c9e6856b-f6d5-4636-bd51-6a4ebd2eb4c8": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/nye-wild-wilder-weelde",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "90ca7df5-7dd4-4222-8f51-8e1932837104": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "1cb30942-937f-4835-ae62-eb30560ece75": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/gaat-movie-sami-el-hassini",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "cb0e0277-43ce-43a4-b105-56c8dfa406e3": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/summerre-2",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "8c53dcb0-847a-4d6e-a4e5-f2979366294f": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/summerre-1",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "37a6d8e1-f7e7-4e50-8442-745a422eea0f": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/centraal-laat",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "888e68ef-8790-41a9-b0a1-34518157ff1d": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/fysical-flyer-woohah-x-rolling-loud-2022",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "c95f5eb4-21e5-4e5e-a426-f58752ed3b95": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnacht-3",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "2dd6e53e-89aa-4b96-9fbe-71947d1e6819": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/woohah",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "c5133e0b-ee73-41c3-a650-df927bfba64c": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/shining-our-light-into-the-darkness-campaign",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "8314ecd9-3a0b-4daf-bb9e-738164c46766": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnacht-2",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "ec708413-72f9-4c9d-bbf2-f754959b271e": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/gaat-movie-camille-boumans",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "330b332d-3156-4bb9-953c-9ffbd3d69da0": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/lacalolly",
+            "margin_top": 100,
+            "margin_right": -8,
+            "margin_bottom": -8,
+            "margin_left": -8
+          }
+        },
+        "f27784ef-42b1-4293-a782-aa38af2fd6fa": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/gaat-movie-malika-helena-de-rijke",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "7a9dcd22-20ed-4a18-803b-d2429b79431f": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnacht-1",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "7e399cee-f620-41e5-afe4-c4de021d7657": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/a-public-service-announcement",
+            "margin_top": 32,
+            "margin_right": -16,
+            "margin_bottom": 96,
+            "margin_left": -16
+          }
+        },
+        "2cc1c029-2cdc-4f6c-b66e-5b1fe97399d6": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/gaat-movie-suzanne-koopstra",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "a297909a-ceb2-4847-aefb-fc1e6d4f2ead": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/gaat-movie-1",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "6a8ff93c-f3df-405d-bf5a-37dbb37ddc7a": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/an-evening-with-la-cassette-2",
+            "margin_top": -40,
+            "margin_right": -12,
+            "margin_bottom": 56,
+            "margin_left": 0
+          }
+        },
+        "88ace52a-2097-4fee-acd2-24fb592234a7": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/an-evening-with-la-cassette",
+            "margin_top": 40,
+            "margin_right": 4,
+            "margin_bottom": -32,
+            "margin_left": -24
+          }
+        },
+        "a15dd849-a870-405b-8b53-988ba30fcdfe": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/a-tajine-dream",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "1770d8de-f51e-4269-8897-75d9ffc46a47": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/la-cassette-roffa",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "9dc4da25-a323-4936-ad19-2ce429cdf3dd": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/summ3-1",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "bd4e96fb-fbae-4d0c-8953-9660bbf5dfa9": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/summerre-burning-feet-exposition",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "2fc054c3-4e60-4746-bb4c-c50f9119076a": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/far-from-done-sweatshirt-campaign",
+            "margin_top": 36,
+            "margin_right": 8,
+            "margin_bottom": -32,
+            "margin_left": -16
+          }
+        },
+        "feca3830-c278-42c4-9d4d-6216676f23c9": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/d",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "1579e672-68dd-4ba9-a215-f607d4431e94": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/from-the-big-u-shawl-campaign-with-noble-goods-co",
+            "margin_top": -40,
+            "margin_right": -20,
+            "margin_bottom": -40,
+            "margin_left": 52
+          }
+        },
+        "101bfaeb-6ae0-4c6b-a910-0d10b0be7a2b": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko-4",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "f0177618-fa05-46d2-8ee6-ffd766a5fb8a": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko-3",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "0fd4d71f-5bfa-48ea-961f-ac0d60a7e016": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/filmcafe-2",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "244c3f6b-59bc-4a7b-a38c-6f63a27746e3": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "d7f5fc12-f893-43fd-8222-634108c75afb": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/film-cafe-1",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "94652b54-eaed-439e-9b76-7d714b3eda21",
+        "b1de2f37-c35d-4f06-b720-c4c8c353aa06",
+        "393e767e-a5ba-4d9a-9300-3a231046e865",
+        "0021d154-64e0-4927-9ffd-923954373c85",
+        "c6ce4e8f-ae34-4b34-9b3f-503cdd44f8e2",
+        "c9e6856b-f6d5-4636-bd51-6a4ebd2eb4c8",
+        "90ca7df5-7dd4-4222-8f51-8e1932837104",
+        "1cb30942-937f-4835-ae62-eb30560ece75",
+        "cb0e0277-43ce-43a4-b105-56c8dfa406e3",
+        "8c53dcb0-847a-4d6e-a4e5-f2979366294f",
+        "37a6d8e1-f7e7-4e50-8442-745a422eea0f",
+        "888e68ef-8790-41a9-b0a1-34518157ff1d",
+        "c95f5eb4-21e5-4e5e-a426-f58752ed3b95",
+        "2dd6e53e-89aa-4b96-9fbe-71947d1e6819",
+        "c5133e0b-ee73-41c3-a650-df927bfba64c",
+        "8314ecd9-3a0b-4daf-bb9e-738164c46766",
+        "ec708413-72f9-4c9d-bbf2-f754959b271e",
+        "330b332d-3156-4bb9-953c-9ffbd3d69da0",
+        "f27784ef-42b1-4293-a782-aa38af2fd6fa",
+        "7a9dcd22-20ed-4a18-803b-d2429b79431f",
+        "7e399cee-f620-41e5-afe4-c4de021d7657",
+        "2cc1c029-2cdc-4f6c-b66e-5b1fe97399d6",
+        "a297909a-ceb2-4847-aefb-fc1e6d4f2ead",
+        "6a8ff93c-f3df-405d-bf5a-37dbb37ddc7a",
+        "88ace52a-2097-4fee-acd2-24fb592234a7",
+        "a15dd849-a870-405b-8b53-988ba30fcdfe",
+        "1770d8de-f51e-4269-8897-75d9ffc46a47",
+        "9dc4da25-a323-4936-ad19-2ce429cdf3dd",
+        "bd4e96fb-fbae-4d0c-8953-9660bbf5dfa9",
+        "2fc054c3-4e60-4746-bb4c-c50f9119076a",
+        "feca3830-c278-42c4-9d4d-6216676f23c9",
+        "1579e672-68dd-4ba9-a215-f607d4431e94",
+        "101bfaeb-6ae0-4c6b-a910-0d10b0be7a2b",
+        "f0177618-fa05-46d2-8ee6-ffd766a5fb8a",
+        "0fd4d71f-5bfa-48ea-961f-ac0d60a7e016",
+        "244c3f6b-59bc-4a7b-a38c-6f63a27746e3",
+        "d7f5fc12-f893-43fd-8222-634108c75afb"
+      ],
+      "settings": {
+        "video_url": "https:\/\/vimeo.com\/719896098",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c"
+  ]
+}
