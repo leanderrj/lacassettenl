@@ -89,6 +89,7 @@
 
 .card__inner {
   width: 100%;
+  /* z-index: -5; */
 }
 
 .card--media .card__inner .card__content {
@@ -123,6 +124,7 @@
     padding-top: 1.7rem;
   }
 }
+
 
 .card__badge {
   align-self: flex-end;

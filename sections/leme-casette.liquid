@@ -1,257 +1,269 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 
-<div class="cassette-container
-	wcss-max-w-screen-sm md:max-w-none twcss-overflow-hidden
+  <div
+  class="cassette-container
+  wcss-max-w-screen-sm md:max-w-none twcss-overflow-hidden
 
-	md:twcss-flex md:twcss-justify-center
-	{% unless section.settings.full_width %} page-width{% endunless %} ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      	md:twcss-flex md:twcss-justify-center{% unless section.settings.full_width %}
+    page-width{% endunless %}">
 
-	{% if section.settings.title__ != blank %}
-		<div class="section-header text-center">
-			<h2>{{ section.settings.title__ | escape }}</h2>
-		</div>
-	{% endif %}
+  {% if section.settings.title__ != blank %}
+    <div class="text-center section-header">
+      <h2>{{ section.settings.title__ | escape }}</h2>
+    </div>
+  {% endif %}
 
-	<div class="vimeo-wrapper video-wrapper">
-		<div id="cassette_video"></div>
-	</div>
+  <div class="vimeo-wrapper video-wrapper">
+    <div id="cassette_video"></div>
+  </div>
 
-	<slider-component class="cassette-grid
-		 			twcss-flex twcss-overflow-x-auto md:twcss-overflow-x-hidden
-					twcss-gap-8
+  <slider-component class="cassette-grid
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  		 			twcss-flex twcss-overflow-x-auto md:twcss-overflow-x-hidden
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  					twcss-gap-8
 
-					md:twcss-grid md:twcss-grid-cols-3 md:twcss-gap-20
-					twcss-pt-8 md:twcss-px-6
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  					md:twcss-grid md:twcss-grid-cols-3 md:twcss-gap-20
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  					twcss-pt-8 md:twcss-px-6
 
-					md:twcss-min-w-[680px] lg:twcss-min-w-[900px] xl:twcss-min-w-[1100px]
-					section-{{ section.id }}-padding
-	">
-		{% for block in section.blocks %}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  					md:twcss-min-w-[680px] lg:twcss-min-w-[900px] xl:twcss-min-w-[1100px]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  					section-{{ section.id }}-padding
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  	">
+    {% for block in section.blocks %}
 
-		{% if block.type == 'text_block' %}
-			<div class="cassette-grid__item {{ block.type }}" >
-				{% if block.settings.enable_image %}
-					{% if block.settings.image != blank %}
-					{% capture img_id %}TextColumnImage-{{ block.id }}{% endcapture %}
-					{% capture wrapper_id %}TextColumnImageWrapper-{{ block.id }}{% endcapture %}
-					{%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-					{% include 'image-style', image: block.settings.image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
-					<div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
-						<div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
-							<img id="{{ img_id }}"
-								class="feature-row__image lazyload"
-								data-src="{{ img_url }}"
-								data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-								data-aspectratio="{{ block.settings.image.aspect_ratio }}"
-								data-sizes="auto"
-								alt="{{ block.settings.image.alt | escape }}">
-						</div>
-					</div>
-					<noscript>
-						<p>
-							{{ block.settings.image | img_url: '480x480', scale: 2 | img_tag: block.settings.image.alt, 'feature-row__image' }}
-						</p>
-					</noscript>
-					{% else %}
-					<p>
-						{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-					</p>
-					{% endif %}
-				{% endif %}
-				{% if block.settings.title != blank %}
-					<h3 class="h4">{{ block.settings.title | escape }}</h3>
-				{% endif %}
-				{% if block.settings.text != blank %}
-					<div class="rte-setting">{{ block.settings.text }}</div>
-				{% endif %}
+      {% if block.type == 'text_block' %}
+        <div class="cassette-grid__item {{ block.type }}">
+          {% if block.settings.enable_image %}
+            {% if block.settings.image != blank %}
+              {% capture img_id %}TextColumnImage-{{ block.id }}{% endcapture %}
+              {% capture wrapper_id %}TextColumnImageWrapper-{{ block.id }}{% endcapture %}
+              {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              {% include 'image-style', image: block.settings.image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
+              <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
+                <div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
+                  <img
+                    id="{{ img_id }}"
+                    class="feature-row__image lazyload"
+                    data-src="{{ img_url }}"
+                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                    data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                    data-sizes="auto"
+                    alt="{{ block.settings.image.alt | escape }}">
+                </div>
+              </div>
+              <noscript>
+                <p>
+                  {{ block.settings.image | img_url: '480x480', scale: 2 | img_tag: block.settings.image.alt, 'feature-row__image' }}
+                </p>
+              </noscript>
+            {% else %}
+              <p>
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </p>
+            {% endif %}
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h3 class="h4">{{ block.settings.title | escape }}</h3>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <div class="rte-setting">{{ block.settings.text }}</div>
+          {% endif %}
 
-				{% if block.settings.button_label != blank and block.settings.button_link != blank %}
-					{%- capture ariaLabel -%}
-					{{- block.settings.button_label -}}
-					{%- if block.settings.button_link.type == 'frontpage_link' -%}
-						: {{ 'homepage.general.title' | t -}}
-					{%- elsif block.settings.button_link.type == 'catalog_link' -%}
-						: {{ 'collections.catalog.title' | t -}}
-					{%- elsif block.settings.button_link.object.title -%}
-						: {{ block.settings.button_link.object.title -}}
-					{%- endif -%}
-					{%- endcapture -%}
+          {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+            {%- capture ariaLabel -%}
+              {{- block.settings.button_label -}}
+              {%- if block.settings.button_link.type == 'frontpage_link' -%}
+                : {{ 'homepage.general.title' | t -}}
+              {%- elsif block.settings.button_link.type == 'catalog_link' -%}
+                : {{ 'collections.catalog.title' | t -}}
+              {%- elsif block.settings.button_link.object.title -%}
+                : {{ block.settings.button_link.object.title -}}
+              {%- endif -%}
+            {%- endcapture -%}
 
-					<a href="{{ block.settings.button_link }}"
-					class="btn btn--secondary btn--small"
-					aria-label="{{ ariaLabel | escape }}">
-					{{- block.settings.button_label | escape -}}
-					</a>
-				{% endif %}
-			</div>
-		{% endif %}
+            <a
+              href="{{ block.settings.button_link }}"
+              class="btn btn--secondary btn--small"
+              aria-label="{{ ariaLabel | escape }}">
+              {{- block.settings.button_label | escape -}}
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
 
-		{% if block.type == 'video_block' %}
-			<div class="cassette-grid__item {{ block.type }}" >
+      {% if block.type == 'video_block' %}
+        <div class="cassette-grid__item {{ block.type }}">
 
-				{% if block.settings.title and block.settings.subtitle != blank %}
-					<section class="block_post__meta" >
-					{% if block.settings.title != blank %}
-						<h3 class="h4 block_title ">{{ block.settings.title | escape }}</h3>
-					{% endif %}
+          {% if block.settings.title and block.settings.subtitle != blank %}
+            <section class="block_post__meta">
+              {% if block.settings.title != blank %}
+                <h3 class="h4 block_title ">{{ block.settings.title | escape }}</h3>
+              {% endif %}
 
-					{% if block.settings.subtitle != blank %}
-						<h3 class="h4 block_subtitle">{{ block.settings.subtitle | escape }}</h3>
-					{% endif %}
-					</section>
-				{% endif %}
+              {% if block.settings.subtitle != blank %}
+                <h3 class="h4 block_subtitle">{{ block.settings.subtitle | escape }}</h3>
+              {% endif %}
+            </section>
+          {% endif %}
 
-				{% include 'cassette-grid__video' %}
+          {% include 'cassette-grid__video' %}
 
-			</div>
-		{% endif %}
-
-
-		{% if block.type == 'product_block' %}
-		<div id="{{ block.type }}-{{ forloop.index }}"
-				class="{% if block.settings.featured_block == true %}featured__item{% endif %}
-						cassette-grid__item {{ block.type }}
-						twcss-inline-block hover:twcss-scale-100 hover:twcss-z-20"
-			style="position: relative;
-						top: {{ block.settings.margin_top }}px;
-						right: {{ block.settings.margin_right }}px;
-						bottom: {{ block.settings.margin_bottom }}px;
-						left: {{ block.settings.margin_left }}px;"
-		>
-		<h1>{{ block.settings.featured_block }} </h1>
-
-				{% render 'card-product',
-					card_product: block.settings.product,
-					media_aspect_ratio: block.settings.image_ratio,
-					show_secondary_image: false,
-					show_vendor: false,
-					show_rating: false,
-					show_quick_add: false,
-					lacassette_grid: true,
-					section_id: block.type
-				%}
-			</div>
-
-		{% endif %}
-
-		{% if block.type == 'blogpost_block' %}
-
-			<div class="{% if block.settings.featured_block == true %}featured__item md:twcss-w-[295px] twcss-z-20 {% endif %}
-						cassette-grid__item {{ block.type }}
-						twcss-inline-block hover:twcss-scale-100 hover:twcss-z-20"
-
-					style="--card_margin: {{ block.settings.margin_top }}px {{ block.settings.margin_right }}px {{ block.settings.margin_bottom }}px {{ block.settings.margin_left }}px ;"
-			>
-				{% render 'card-blogpost',
-					card_article: block.settings.article,
-					media_aspect_ratio: block.settings.image_ratio,
-					hover_effect: true,
-					hover_effect: true,
-					section_id: block.settings.type
-				%}
-			</div>
-		{% endif %}
+        </div>
+      {% endif %}
 
 
+      {% if block.type == 'product_block' %}
+        <div
+          id="{{ block.type }}-{{ forloop.index }}"
+          class="
+          {% if block.settings.featured_block == true %}featured__item{% endif %}
+          cassette-grid__item {{ block.type }}
+          twcss-inline-block hover:twcss-scale-100 hover:twcss-z-10"
+          style="position: relative;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    						top: {{ block.settings.margin_top }}px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    						right: {{ block.settings.margin_right }}px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    						bottom: {{ block.settings.margin_bottom }}px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    						left: {{ block.settings.margin_left }}px;">
+          <h1>{{ block.settings.featured_block }}
+          </h1>
 
-		{% endfor %}
-	</slider-component> <!-- .cassette-grid -->
+          {% render 'card-product'
+           , card_product: block.settings.product,
+           media_aspect_ratio: block.settings.image_ratio,
+           show_secondary_image: false,
+           show_vendor: false,
+           show_rating: false,
+           show_quick_add: false,
+           lacassette_grid: true,
+           section_id: block.type %}
+        </div>
 
+      {% endif %}
 
-{% if section.settings.color_title contains 'rgba(0,0,0,0)' %}
-	{%- assign title_color = settings.cassette_brand_1 %}
-{% else %}
-	{%- assign title_color = section.settings.color_title %}
-{% endif %}
+      {% if block.type == 'blogpost_block' %}
+
+        <div
+          class="
+          {% if block.settings.featured_block == true %}featured__item md:twcss-w-[295px] md:twcss-z-10
+          {% endif %}
+          cassette-grid__item {{ block.type }}
+          twcss-inline-block hover:twcss-scale-100 hover:twcss-z-20"
+          style="--card_margin: {{ block.settings.margin_top }}px {{ block.settings.margin_right }}px {{ block.settings.margin_bottom }}px {{ block.settings.margin_left }}px; ">
+          {% render 'card-blogpost'
+           , card_article: block.settings.article,
+           media_aspect_ratio: block.settings.image_ratio,
+           hover_effect: true,
+           hover_effect: true,
+           section_id: block.settings.type %}
+        </div>
+      {% endif %}
 
 
 
+    {% endfor %}
+  </slider-component>
+  <!-- .cassette-grid -->
 
 
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script>
-	const options = {
-		id: 719896098,
-		// width: 640,
-		autoplay: true,
-		background: true,
-		playsinline: true,
-		byline: false,
-		loop: true
-	};
-
-	const player = new Vimeo.Player('cassette_video', options);
-	player.setVolume(0);
-</script>
-
-<style>
-	.vimeo-wrapper {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		pointer-events: none;
-		overflow: hidden;
-		height: 100vh;
-	}
-
-	.vimeo-wrapper {
-			animation: ShowAnimation 4s forwards;
-	}
-	@keyframes ShowAnimation{
-		0%{
-			opacity: 0;
-		}
-		99.99%{
-			opacity: 0;
-		}
-		100%{
-			opacity: 80%;
-		}
-	}
-
-	.vimeo-wrapper iframe {
-		width: 100vw;
-		height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-		min-height: 100vh;
-		min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	.section-{{ section.id }}-padding {
-		padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-		padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-	}
-	@media screen and (min-width: 750px) {
-		.cassette-grid__item {
-			margin: var(--card_margin)
-		}
-
-		.section-{{ section.id }}-padding {
-			padding-top: {{ section.settings.padding_top }}px;
-			padding-bottom: {{ section.settings.padding_bottom }}px;
-		}
-
-		.featured__item {
-			position: absolute;
-		}
-		.featured__item:nth-child(1) {
-			top: 16vh;
-			left: 29vw;
-		}
-		.featured__item:nth-child(2) {
-			top: 25vh;
-			right: 60ch;
-		}
-	}
+  {% if section.settings.color_title contains 'rgba(0,0,0,0)' %}
+    {%- assign title_color = settings.cassette_brand_1 %}
+  {% else %}
+    {%- assign title_color = section.settings.color_title %}
+  {% endif %}
 
 
 
-	/* .section-header {
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script>
+    const options = {
+      id: 719896098,
+
+// width: 640,
+      autoplay: true,
+      background: true,
+      playsinline: true,
+      byline: false,
+      loop: true
+    };
+
+    const player = new Vimeo.Player('cassette_video', options);
+    player.setVolume(0);
+  </script>
+
+  <style>
+    .vimeo-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -30;
+      pointer-events: none;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .vimeo-wrapper {
+      animation: ShowAnimation 4s forwards;
+    }
+    @keyframes ShowAnimation {
+      0% {
+        opacity: 0;
+      }
+      99.99% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 80%;
+      }
+    }
+
+    .vimeo-wrapper iframe {
+      width: 100vw;
+      height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+      min-height: 100vh;
+      min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+      px;
+    }
+    @media screen and (min-width: 750px) {
+      .cassette-grid__item {
+        margin: var(--card_margin) z-index: -1;
+      }
+
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}
+        px;
+        padding-bottom: {{ section.settings.padding_bottom }}
+        px;
+      }
+
+      .featured__item {
+        position: absolute;
+      }
+      .featured__item:nth-child(1) {
+        top: 16vh;
+        left: 29vw;
+      }
+      .featured__item:nth-child(2) {
+        top: 25vh;
+        right: 18vw;
+      }
+    }
+
+    .cassette-grid__item .card__inner {
+      z-index: -5;
+    }
+
+
+
+    /* .section-header {
 		margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
 	}
 
@@ -260,315 +272,287 @@
 			margin-bottom: {{ section.settings.margin_bottom }}px;
 		}
 	} */
-
-
-</style>
+  </style>
 
 </div>
 
 
 
 {% schema %}
-{
-	"name": "La Cassette | gallery",
-	"class": "lacasette_gallery",
-	"settings": [
-		{
-			"type": "video_url",
-			"id": "video_url",
-			"accept": [
-			"vimeo"
-			],
-			"default": "https://vimeo.com/719896098",
-			"label": "t:sections.video.settings.video_url.label",
-			"placeholder": "t:sections.video.settings.video_url.placeholder",
-			"info": "Insert Vimeo link"
-		},
-		{
-			"type": "checkbox",
-			"id": "full_width",
-			"default": true,
-			"label": "t:sections.rich-text.settings.full_width.label"
-		},
-		{
-			"type": "header",
-			"content": "t:sections.all.padding.section_padding_heading"
-		},
-		{
-			"type": "range",
-			"id": "padding_top",
-			"min": 0,
-			"max": 300,
-			"step": 4,
-			"unit": "px",
-			"label": "t:sections.all.padding.padding_top",
-			"default": 40
-		},
-		{
-			"type": "range",
-			"id": "padding_bottom",
-			"min": 0,
-			"max": 300,
-			"step": 4,
-			"unit": "px",
-			"label": "t:sections.all.padding.padding_bottom",
-			"default": 52
-		}
-	],
-	"blocks": [
-		{
-			"type": "image_block",
-			"name": "Image",
-			"settings": [
-			{
-				"type": "image_picker",
-				"id": "image",
-				"label": "Image"
-			},
-			{
-				"type": "text",
-				"id": "title",
-				"label": "Heading"
-			},
-			{
-				"type": "text",
-				"id": "subtitle",
-				"label": "Subheading"
-			},
-			{
-				"type": "url",
-				"id": "block_link",
-				"label": "Block link"
-			}
-			]
-		},
-		{
-			"type": "video_block",
-			"name": "Video block",
-			"settings": [
-			{
-				"type": "image_picker",
-				"id": "image",
-				"label": "Video cover image"
-			},
-			{
-				"type": "text",
-				"id": "video_link",
-				"label": "Youtube link",
-				"default": "https://www.youtube.com/watch?v=PrRIOLlLK2M"
-			},
-			{
-				"type": "select",
-				"id": "style",
-				"label": "Style",
-				"default": "image_with_play",
-				"options": [
-					{
-					"label": "Image with play button",
-					"value": "image_with_play"
-					},
-					{
-					"label": "Background video",
-					"value": "background"
-					}
-				]
-			},
-			{
-				"type": "checkbox",
-				"id": "show_overlay",
-				"label": "Show overlay",
-				"default": true
-			},
-			{
-				"type": "text",
-				"id": "video_title",
-				"label": "Video title"
-			},
-			{
-				"type": "text",
-				"id": "title",
-				"label": "Heading"
-			},
-			{
-				"type": "text",
-				"id": "subtitle",
-				"label": "Subheading"
-			},
-			{
-				"type": "url",
-				"id": "block_link",
-				"label": "Block link"
-			}
-			]
-		},
-		{
-			"type": "product_block",
-			"name": "Product",
-			"settings": [
-			{
-				"type": "select",
-				"id": "image_ratio",
-				"options": [
-				{
-					"value": "adapt",
-					"label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
-				},
-				{
-					"value": "portrait",
-					"label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
-				},
-				{
-					"value": "square",
-					"label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
-				}
-				],
-				"default": "portrait",
-				"label": "t:sections.featured-collection.settings.image_ratio.label"
-			},
-			{
-				"type": "product",
-				"id": "product",
-				"label": "t:sections.collage.blocks.product.settings.product.label"
-			},
-			{
-				"type": "header",
-				"content": "Element margin"
-			},
-			{
-				"type": "range",
-				"id": "margin_top",
-				"min": -40,
-				"max": 100,
-				"step": 4,
-				"unit": "px",
-				"label": "Top margin",
-				"default": 0
-			},
-			{
-				"type": "range",
-				"id": "margin_right",
-				"min": -40,
-				"max": 100,
-				"step": 4,
-				"unit": "px",
-				"label": "Right margin",
-				"default": 0
-			},
-			{
-				"type": "range",
-				"id": "margin_bottom",
-				"min": -40,
-				"max": 100,
-				"step": 4,
-				"unit": "px",
-				"label": "Bottom margin",
-				"default": 0
-			},
-			{
-				"type": "range",
-				"id": "margin_left",
-				"min": -40,
-				"max": 100,
-				"step": 4,
-				"unit": "px",
-				"label": "Left margin",
-				"default": 0
-			}
+  {
+    "name": "La Cassette | gallery",
+    "class": "lacasette_gallery",
+    "settings": [
+      {
+        "type": "video_url",
+        "id": "video_url",
+        "accept": ["vimeo"],
+        "default": "https://vimeo.com/719896098",
+        "label": "t:sections.video.settings.video_url.label",
+        "placeholder": "t:sections.video.settings.video_url.placeholder",
+        "info": "Insert Vimeo link"
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "default": true,
+        "label": "t:sections.rich-text.settings.full_width.label"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 300,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 52
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_block",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          }, {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subheading"
+          }, {
+            "type": "url",
+            "id": "block_link",
+            "label": "Block link"
+          }
+        ]
+      }, {
+        "type": "video_block",
+        "name": "Video block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Video cover image"
+          },
+          {
+            "type": "text",
+            "id": "video_link",
+            "label": "Youtube link",
+            "default": "https://www.youtube.com/watch?v=PrRIOLlLK2M"
+          },
+          {
+            "type": "select",
+            "id": "style",
+            "label": "Style",
+            "default": "image_with_play",
+            "options": [
+              {
+                "label": "Image with play button",
+                "value": "image_with_play"
+              }, {
+                "label": "Background video",
+                "value": "background"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "show_overlay",
+            "label": "Show overlay",
+            "default": true
+          }, {
+            "type": "text",
+            "id": "video_title",
+            "label": "Video title"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          }, {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subheading"
+          }, {
+            "type": "url",
+            "id": "block_link",
+            "label": "Block link"
+          }
+        ]
+      }, {
+        "type": "product_block",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "select",
+            "id": "image_ratio",
+            "options": [
+              {
+                "value": "adapt",
+                "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
+              }, {
+                "value": "portrait",
+                "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
+              }, {
+                "value": "square",
+                "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
+              }
+            ],
+            "default": "portrait",
+            "label": "t:sections.featured-collection.settings.image_ratio.label"
+          },
+          {
+            "type": "product",
+            "id": "product",
+            "label": "t:sections.collage.blocks.product.settings.product.label"
+          },
+          {
+            "type": "header",
+            "content": "Element margin"
+          },
+          {
+            "type": "range",
+            "id": "margin_top",
+            "min": -40,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Top margin",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_right",
+            "min": -40,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Right margin",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": -40,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Bottom margin",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_left",
+            "min": -40,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Left margin",
+            "default": 0
+          }
 
-			]
-		},
-		{
-			"type": "blogpost_block",
-			"name": "Blog post",
-			"settings": [
-			{
-				"type": "checkbox",
-				"id": "featured_block",
-				"label": "Featured block",
-				"default": false
-			},
-			{
-				"type": "select",
-				"id": "image_ratio",
-				"options": [
-				{
-					"value": "adapt",
-					"label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
-				},
-				{
-					"value": "portrait",
-					"label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
-				},
-				{
-					"value": "square",
-					"label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
-				}
-			],
-				"default": "square",
-				"label": "t:sections.featured-collection.settings.image_ratio.label"
-			},
-			{
-				"type": "url",
-				"id": "article",
-				"label": "Select Post"
-			},
+        ]
+      }, {
+        "type": "blogpost_block",
+        "name": "Blog post",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "featured_block",
+            "label": "Featured block",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "image_ratio",
+            "options": [
+              {
+                "value": "adapt",
+                "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
+              }, {
+                "value": "portrait",
+                "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
+              }, {
+                "value": "square",
+                "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
+              }
+            ],
+            "default": "square",
+            "label": "t:sections.featured-collection.settings.image_ratio.label"
+          },
+          {
+            "type": "url",
+            "id": "article",
+            "label": "Select Post"
+          },
 
-			{
-				"type": "header",
-				"content": "Element margin"
-			},
-			{
-				"type": "range",
-				"id": "margin_top",
-				"min": -40,
-				"max": 100,
-				"step": 4,
-				"unit": "px",
-				"label": "Top margin",
-				"default": 0
-			},
-			{
-				"type": "range",
-				"id": "margin_right",
-				"min": -40,
-				"max": 100,
-				"step": 4,
-				"unit": "px",
-				"label": "Right margin",
-				"default": 0
-			},
-			{
-				"type": "range",
-				"id": "margin_bottom",
-				"min": -40,
-				"max": 100,
-				"step": 4,
-				"unit": "px",
-				"label": "Bottom margin",
-				"default": 0
-			},
-			{
-				"type": "range",
-				"id": "margin_left",
-				"min": -40,
-				"max": 100,
-				"step": 4,
-				"unit": "px",
-				"label": "Left margin",
-				"default": 0
-			}
-			]
-		}
+          {
+            "type": "header",
+            "content": "Element margin"
+          }, {
+            "type": "range",
+            "id": "margin_top",
+            "min": -40,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Top margin",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_right",
+            "min": -40,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Right margin",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_bottom",
+            "min": -40,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Bottom margin",
+            "default": 0
+          }, {
+            "type": "range",
+            "id": "margin_left",
+            "min": -40,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "Left margin",
+            "default": 0
+          }
+        ]
+      }
 
 
-	],
-	"presets": [
-		{
-			"name": "La Cassette | gallery",
-			"category": "Leme for La Cassette",
-			"blocks": [
-			]
-		}
-	]
-}
+    ],
+    "presets": [
+      {
+        "name": "La Cassette | gallery",
+        "category": "Leme for La Cassette",
+        "blocks": []
+      }
+    ]
+  }
 {% endschema %}

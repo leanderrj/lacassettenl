@@ -32,9 +32,9 @@
         ">
 
         {%- for article in blog.articles -%}
-          <div class="{% if block.settings.featured_block == true %}featured__item md:twcss-w-[295px] twcss-z-20 {% endif %}
+          <div class="{% if block.settings.featured_block == true %}featured__item md:twcss-w-[295px] md:twcss-z-20 {% endif %}
                 cassette-grid__item {{ block.type }}
-                twcss-inline-block hover:twcss-scale-100 hover:twcss-z-20"
+                twcss-inline-block hover:twcss-scale-100 hover:md:twcss-z-20"
           >
             {% render 'card-blogpost',
               article_link: article,
