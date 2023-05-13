@@ -8,7 +8,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight-3",
+            "article": "shopify:\/\/blogs\/events\/clubnight-1",
             "margin_top": 28,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -20,7 +20,7 @@
           "settings": {
             "featured_block": true,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-3",
             "margin_top": 100,
             "margin_right": 64,
             "margin_bottom": 60,
