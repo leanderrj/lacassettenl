@@ -62,7 +62,7 @@
 	{%- endif -%}
 
 	{% if article_object.metafields.event.link %}
-		<a class="{% if hover_effects %}group-hover:twcss-inline-block twcss-hidden twcss-float-right {% else %}twcss-top-4 {% endif %} {{ font_size }} twcss-font-bold twcss-uppercase twcss-p-2 twcss-px-4 twcss-bg-[#ff0000] twcss-text-white twcss-relative twcss-z-60" href="{{ EventUrl }}" target="_blank" >
+		<a class="{% if hover_effects %}group-hover:twcss-inline-block twcss-hidden twcss-float-right {% else %}twcss-top-4 {% endif %} {{ font_size }} twcss-font-bold twcss-uppercase twcss-p-2 twcss-px-4 twcss-bg-[#ff0000] twcss-text-white twcss-relative twcss-z-50" href="{{ EventUrl }}" target="_blank" >
 			<span>{{ EventLinkLabel }}</span>
 		</a>
 	{% endif %}
