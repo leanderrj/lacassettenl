@@ -89,7 +89,7 @@
         %}
 
         <div class="information twcss-max-w-md ">
-          <h5 class="card__heading twcss-text-lg twcss-font-bold twcss-text-black
+          <h5 class="card__heading twcss-text-lg twcss-font-bold twcss-text-black group-hover:twcss-text-white
           {% if card_product.featured_media or settings.card_style == 'card' %} id="title-{{ section_id }}-{{ card_product.id }}"{% endif %}>
             <a href="{{ card_url }}" id="CardLink-{{ section_id }}-{{ card_article.id }}" class="full-unstyled-link" aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}">
               {{ card_article_object.title | escape }}
