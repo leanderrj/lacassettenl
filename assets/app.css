@@ -536,6 +536,10 @@ video {
   top: 1rem;
 }
 
+.twcss-z-50 {
+  z-index: 50;
+}
+
 .twcss-row-span-2 {
   grid-row: span 2 / span 2;
 }

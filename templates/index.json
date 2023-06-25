@@ -1,1 +1,397 @@
-{"sections":{"1662542020dd9810f3":{"type":"leme-casette","blocks":{"d8e47318-96f2-4c0b-9acb-5a2cb60d0666":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/events\/clubnight-3","margin_top":28,"margin_right":0,"margin_bottom":0,"margin_left":0}},"ff054ea4-c078-4934-85d8-b18b93509b4a":{"type":"blogpost_block","settings":{"featured_block":true,"image_ratio":"square","article":"shopify:\/\/blogs\/events\/clubnight","margin_top":100,"margin_right":64,"margin_bottom":60,"margin_left":4}},"4a87b9b0-4d35-42e2-bdeb-8224ef75facb":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnight-1","margin_top":76,"margin_right":-40,"margin_bottom":48,"margin_left":0}},"87fad918-db1d-486c-bcd2-e1e7a432d13a":{"type":"blogpost_block","disabled":true,"settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/summerre-2","margin_top":72,"margin_right":0,"margin_bottom":0,"margin_left":0}},"30580299-fc4e-4782-af99-276a60905433":{"type":"blogpost_block","disabled":true,"settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/events\/gaat-movie-rogier-de-reiger","margin_top":100,"margin_right":100,"margin_bottom":-40,"margin_left":-40}},"e06d4fca-2184-42d5-85e7-240ec3c1d803":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnacht-2","margin_top":88,"margin_right":-8,"margin_bottom":16,"margin_left":-40}},"feeea564-f2fa-4198-8661-93b96177d91f":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/you-aint-seen-nothing-yet-a-la-cassette-documentary","margin_top":0,"margin_right":-8,"margin_bottom":0,"margin_left":8}},"19c113be-a862-4f43-8ede-abb95bf7b6f6":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/clubnight","margin_top":68,"margin_right":-40,"margin_bottom":16,"margin_left":-16}},"4f318aea-b13a-4024-b045-f628fe32a81d":{"type":"blogpost_block","settings":{"featured_block":false,"image_ratio":"square","article":"shopify:\/\/blogs\/archive\/centraal-laat","margin_top":0,"margin_right":0,"margin_bottom":0,"margin_left":0}},"e08cacb1-f1df-477f-88e9-1e4869cff5b9":{"type":"product_block","disabled":true,"settings":{"image_ratio":"portrait","product":"the-la-cassette-far-from-done-sweater","margin_top":-28,"margin_right":36,"margin_bottom":-28,"margin_left":20}}},"block_order":["d8e47318-96f2-4c0b-9acb-5a2cb60d0666","ff054ea4-c078-4934-85d8-b18b93509b4a","4a87b9b0-4d35-42e2-bdeb-8224ef75facb","87fad918-db1d-486c-bcd2-e1e7a432d13a","30580299-fc4e-4782-af99-276a60905433","e06d4fca-2184-42d5-85e7-240ec3c1d803","feeea564-f2fa-4198-8661-93b96177d91f","19c113be-a862-4f43-8ede-abb95bf7b6f6","4f318aea-b13a-4024-b045-f628fe32a81d","e08cacb1-f1df-477f-88e9-1e4869cff5b9"],"settings":{"video_url":"https:\/\/vimeo.com\/719896098","full_width":true,"padding_top":36,"padding_bottom":36}},"video":{"type":"video","disabled":true,"settings":{"heading":"","heading_size":"h1","cover_image":"shopify:\/\/shop_images\/000000240033_81a37d3a-9ee1-4a20-92d9-4ac194320399.jpg","video_url":"https:\/\/vimeo.com\/719896098","description":"","full_width":true,"color_scheme":"background-1","padding_top":0,"padding_bottom":0}},"featured_collection":{"type":"featured-collection","disabled":true,"settings":{"title":"","heading_size":"h1","description":"","show_description":false,"description_style":"subtitle","collection":"all","products_to_show":9,"columns_desktop":4,"full_width":false,"show_view_all":false,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"accent-2","image_ratio":"square","show_secondary_image":true,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"columns_mobile":"2","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"image_banner":{"type":"image-banner","disabled":true,"blocks":{"heading":{"type":"heading","disabled":true,"settings":{"heading":"Image banner","heading_size":"h0"}},"text":{"type":"text","disabled":true,"settings":{"text":"Give customers details about the banner image(s) or content on the template.","text_style":"body"}},"button":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","text","button"],"settings":{"image":"shopify:\/\/shop_images\/IMG_0069.jpg","image_2":"shopify:\/\/shop_images\/jamanbroershots-000001-2.jpg","image_overlay_opacity":0,"image_height":"large","adapt_height_first_image":false,"desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"background-1","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"166254200939354ac9":{"type":"countdown-trellis","disabled":true,"settings":{"padding_top":36,"padding_bottom":36,"bkg_color":"rgba(0,0,0,0)","content_color":"#f3f3f3","title":"Countdown","description":"","date":"09\/09\/2022","expired_text":"<p>Countdown Finished!<\/p>","show_days":true,"show_hours":true,"show_minutes":true,"show_seconds":true}},"collage":{"type":"collage","disabled":true,"blocks":{"collection-0":{"type":"collection","settings":{"collection":""}},"product":{"type":"product","settings":{"product":"","second_image":false}},"collection-1":{"type":"collection","settings":{"collection":""}}},"block_order":["collection-0","product","collection-1"],"settings":{"heading":"Multimedia collage","heading_size":"h2","desktop_layout":"left","mobile_layout":"collage","color_scheme":"background-1","padding_top":36,"padding_bottom":36}},"multicolumn":{"type":"multicolumn","disabled":true,"blocks":{"column1":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column2":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column3":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}}},"block_order":["column1","column2","column3"],"settings":{"title":"","heading_size":"h1","image_width":"third","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"background-1","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"rich_text":{"type":"rich-text","disabled":true,"blocks":{"heading":{"type":"heading","settings":{"heading":"<p>Talk about your brand<\/p>","heading_size":"h1"}},"text":{"type":"text","settings":{"text":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"}}},"block_order":["heading","text"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"background-1","full_width":true,"padding_top":40,"padding_bottom":0}}},"order":["1662542020dd9810f3","video","featured_collection","image_banner","166254200939354ac9","collage","multicolumn","rich_text"]}
+{
+  "sections": {
+    "1662542020dd9810f3": {
+      "type": "leme-casette",
+      "blocks": {
+        "d8e47318-96f2-4c0b-9acb-5a2cb60d0666": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-2",
+            "margin_top": 28,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "ff054ea4-c078-4934-85d8-b18b93509b4a": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": true,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-1",
+            "margin_top": 100,
+            "margin_right": 64,
+            "margin_bottom": 60,
+            "margin_left": 4
+          }
+        },
+        "4a87b9b0-4d35-42e2-bdeb-8224ef75facb": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-1",
+            "margin_top": 76,
+            "margin_right": -40,
+            "margin_bottom": 48,
+            "margin_left": 0
+          }
+        },
+        "87fad918-db1d-486c-bcd2-e1e7a432d13a": {
+          "type": "blogpost_block",
+          "disabled": true,
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/summerre-2",
+            "margin_top": 72,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "30580299-fc4e-4782-af99-276a60905433": {
+          "type": "blogpost_block",
+          "disabled": true,
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/gaat-movie-rogier-de-reiger",
+            "margin_top": 100,
+            "margin_right": 100,
+            "margin_bottom": -40,
+            "margin_left": -40
+          }
+        },
+        "e06d4fca-2184-42d5-85e7-240ec3c1d803": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/summerre-2",
+            "margin_top": 88,
+            "margin_right": -8,
+            "margin_bottom": 16,
+            "margin_left": -40
+          }
+        },
+        "feeea564-f2fa-4198-8661-93b96177d91f": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/you-aint-seen-nothing-yet-a-la-cassette-documentary",
+            "margin_top": 0,
+            "margin_right": -8,
+            "margin_bottom": 0,
+            "margin_left": 8
+          }
+        },
+        "19c113be-a862-4f43-8ede-abb95bf7b6f6": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight",
+            "margin_top": 68,
+            "margin_right": -40,
+            "margin_bottom": 16,
+            "margin_left": -16
+          }
+        },
+        "4f318aea-b13a-4024-b045-f628fe32a81d": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/centraal-laat",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "e08cacb1-f1df-477f-88e9-1e4869cff5b9": {
+          "type": "product_block",
+          "disabled": true,
+          "settings": {
+            "image_ratio": "portrait",
+            "product": "the-la-cassette-far-from-done-sweater",
+            "margin_top": -28,
+            "margin_right": 36,
+            "margin_bottom": -28,
+            "margin_left": 20
+          }
+        }
+      },
+      "block_order": [
+        "d8e47318-96f2-4c0b-9acb-5a2cb60d0666",
+        "ff054ea4-c078-4934-85d8-b18b93509b4a",
+        "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
+        "87fad918-db1d-486c-bcd2-e1e7a432d13a",
+        "30580299-fc4e-4782-af99-276a60905433",
+        "e06d4fca-2184-42d5-85e7-240ec3c1d803",
+        "feeea564-f2fa-4198-8661-93b96177d91f",
+        "19c113be-a862-4f43-8ede-abb95bf7b6f6",
+        "4f318aea-b13a-4024-b045-f628fe32a81d",
+        "e08cacb1-f1df-477f-88e9-1e4869cff5b9"
+      ],
+      "settings": {
+        "video_url": "https:\/\/vimeo.com\/719896098",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/000000240033_81a37d3a-9ee1-4a20-92d9-4ac194320399.jpg",
+        "video_url": "https:\/\/vimeo.com\/719896098",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "all",
+        "products_to_show": 9,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "accent-2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_0069.jpg",
+        "image_2": "shopify:\/\/shop_images\/jamanbroershots-000001-2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "166254200939354ac9": {
+      "type": "countdown-trellis",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bkg_color": "rgba(0,0,0,0)",
+        "content_color": "#f3f3f3",
+        "title": "Countdown",
+        "description": "",
+        "date": "09\/09\/2022",
+        "expired_text": "<p>Countdown Finished!<\/p>",
+        "show_days": true,
+        "show_hours": true,
+        "show_minutes": true,
+        "show_seconds": true
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "1662542020dd9810f3",
+    "video",
+    "featured_collection",
+    "image_banner",
+    "166254200939354ac9",
+    "collage",
+    "multicolumn",
+    "rich_text"
+  ]
+}
