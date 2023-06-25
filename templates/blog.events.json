@@ -18,7 +18,6 @@
       "blocks": {
         "96c4f26f-fe28-48c9-aaff-04ae63c1d16a": {
           "type": "blogpost_block",
-          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
