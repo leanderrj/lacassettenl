@@ -8,7 +8,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-3",
+            "article": "shopify:\/\/blogs\/events\/clubnight-2",
             "margin_top": 28,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -20,7 +20,7 @@
           "settings": {
             "featured_block": true,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight",
+            "article": "shopify:\/\/blogs\/events\/clubnight-1",
             "margin_top": 100,
             "margin_right": 64,
             "margin_bottom": 60,
@@ -70,7 +70,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnacht-2",
+            "article": "shopify:\/\/blogs\/archive\/summerre-2",
             "margin_top": 88,
             "margin_right": -8,
             "margin_bottom": 16,
