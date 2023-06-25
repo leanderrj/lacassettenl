@@ -8,7 +8,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-2",
+            "article": "shopify:\/\/blogs\/events\/clubnight-3",
             "margin_top": 28,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -20,7 +20,7 @@
           "settings": {
             "featured_block": true,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-1",
+            "article": "shopify:\/\/blogs\/events\/clubnight",
             "margin_top": 100,
             "margin_right": 64,
             "margin_bottom": 60,
@@ -39,12 +39,38 @@
             "margin_left": 0
           }
         },
+        "87fad918-db1d-486c-bcd2-e1e7a432d13a": {
+          "type": "blogpost_block",
+          "disabled": true,
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/summerre-2",
+            "margin_top": 72,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "30580299-fc4e-4782-af99-276a60905433": {
+          "type": "blogpost_block",
+          "disabled": true,
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/gaat-movie-rogier-de-reiger",
+            "margin_top": 100,
+            "margin_right": 100,
+            "margin_bottom": -40,
+            "margin_left": -40
+          }
+        },
         "e06d4fca-2184-42d5-85e7-240ec3c1d803": {
           "type": "blogpost_block",
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/summerre-2",
+            "article": "shopify:\/\/blogs\/archive\/clubnacht-2",
             "margin_top": 88,
             "margin_right": -8,
             "margin_bottom": 16,
@@ -104,6 +130,8 @@
         "d8e47318-96f2-4c0b-9acb-5a2cb60d0666",
         "ff054ea4-c078-4934-85d8-b18b93509b4a",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
+        "87fad918-db1d-486c-bcd2-e1e7a432d13a",
+        "30580299-fc4e-4782-af99-276a60905433",
         "e06d4fca-2184-42d5-85e7-240ec3c1d803",
         "feeea564-f2fa-4198-8661-93b96177d91f",
         "19c113be-a862-4f43-8ede-abb95bf7b6f6",
