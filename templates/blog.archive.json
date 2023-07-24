@@ -16,6 +16,18 @@
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
       "blocks": {
+        "109d4f20-1c47-4821-9884-5ef7bc766d5f": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-2",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "58ec7317-a807-4424-a168-eead938872aa": {
           "type": "blogpost_block",
           "settings": {
@@ -486,6 +498,7 @@
         }
       },
       "block_order": [
+        "109d4f20-1c47-4821-9884-5ef7bc766d5f",
         "58ec7317-a807-4424-a168-eead938872aa",
         "8490bf58-376b-4020-af7c-af988393b080",
         "94652b54-eaed-439e-9b76-7d714b3eda21",
