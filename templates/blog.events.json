@@ -15,36 +15,6 @@
     },
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
-      "blocks": {
-        "96c4f26f-fe28-48c9-aaff-04ae63c1d16a": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-2",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "deb4b689-7a4a-44d7-83b3-1e3f59739eea": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/summerre-festival",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "96c4f26f-fe28-48c9-aaff-04ae63c1d16a",
-        "deb4b689-7a4a-44d7-83b3-1e3f59739eea"
-      ],
       "settings": {
         "video_url": "https:\/\/vimeo.com\/719896098",
         "full_width": true,
