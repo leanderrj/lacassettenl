@@ -15,6 +15,23 @@
     },
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
+      "blocks": {
+        "77f213bd-dbb1-46a6-994d-6b77054fea3f": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-3",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "77f213bd-dbb1-46a6-994d-6b77054fea3f"
+      ],
       "settings": {
         "video_url": "https:\/\/vimeo.com\/719896098",
         "full_width": true,
