@@ -40,6 +40,18 @@
             "margin_left": 4
           }
         },
+        "67447c67-844a-40f9-9a1c-77150b7d90b7": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/gaat-movie-geerten-harmens",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb": {
           "type": "blogpost_block",
           "settings": {
@@ -90,6 +102,7 @@
         },
         "4f318aea-b13a-4024-b045-f628fe32a81d": {
           "type": "blogpost_block",
+          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -117,6 +130,7 @@
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
         "d8e47318-96f2-4c0b-9acb-5a2cb60d0666",
         "ff054ea4-c078-4934-85d8-b18b93509b4a",
+        "67447c67-844a-40f9-9a1c-77150b7d90b7",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
         "e06d4fca-2184-42d5-85e7-240ec3c1d803",
         "feeea564-f2fa-4198-8661-93b96177d91f",
