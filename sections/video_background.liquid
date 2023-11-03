@@ -2,8 +2,6 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 <style type="text/css">
-
-
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -31,14 +29,15 @@
 </style>
 
 
-<div class=" twcss-hidsden color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
         {%- if section.settings.video_url.type == 'youtube' -%}
           <iframe class="twcss-aspect-video twcss-w-full js-youtube" src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
         {%- elsif section.settings.video_url.type == 'vimeo' -%}
           <iframe class="twcss-aspect-video twcss-w-full js-vimeo" src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
         {%- else -%}
-          <video autoplay playsinline loop muted {% if section.settings.video_file_controls %}controls{% endif %} >
+          <video autoplay playsinline loop muted {% if section.settings.video_file_controls %}controls{% endif %}
+            class="twcss-w-full ">
             <source src="{{ section.settings.video_file_url }}" type="video/mp4">
             Your browser does not support the video tag.
           </video>
