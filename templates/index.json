@@ -3,8 +3,21 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
+        "67447c67-844a-40f9-9a1c-77150b7d90b7": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/gaat-movie-geerten-harmens",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "d8e47318-96f2-4c0b-9acb-5a2cb60d0666": {
           "type": "blogpost_block",
+          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -27,6 +40,18 @@
             "margin_left": 4
           }
         },
+        "597a2a8a-e89f-4f3c-a1e2-013461e1efab": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-3",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb": {
           "type": "blogpost_block",
           "settings": {
@@ -37,32 +62,6 @@
             "margin_right": -40,
             "margin_bottom": 48,
             "margin_left": 0
-          }
-        },
-        "87fad918-db1d-486c-bcd2-e1e7a432d13a": {
-          "type": "blogpost_block",
-          "disabled": true,
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/summerre-2",
-            "margin_top": 72,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "30580299-fc4e-4782-af99-276a60905433": {
-          "type": "blogpost_block",
-          "disabled": true,
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/gaat-movie-rogier-de-reiger",
-            "margin_top": 100,
-            "margin_right": 100,
-            "margin_bottom": -40,
-            "margin_left": -40
           }
         },
         "e06d4fca-2184-42d5-85e7-240ec3c1d803": {
@@ -103,6 +102,7 @@
         },
         "4f318aea-b13a-4024-b045-f628fe32a81d": {
           "type": "blogpost_block",
+          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -127,11 +127,11 @@
         }
       },
       "block_order": [
+        "67447c67-844a-40f9-9a1c-77150b7d90b7",
         "d8e47318-96f2-4c0b-9acb-5a2cb60d0666",
         "ff054ea4-c078-4934-85d8-b18b93509b4a",
+        "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
-        "87fad918-db1d-486c-bcd2-e1e7a432d13a",
-        "30580299-fc4e-4782-af99-276a60905433",
         "e06d4fca-2184-42d5-85e7-240ec3c1d803",
         "feeea564-f2fa-4198-8661-93b96177d91f",
         "19c113be-a862-4f43-8ede-abb95bf7b6f6",
@@ -190,7 +190,6 @@
     },
     "image_banner": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -226,6 +225,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_0069.jpg",
         "image_2": "shopify:\/\/shop_images\/jamanbroershots-000001-2.jpg",
@@ -261,7 +261,6 @@
     },
     "collage": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -288,6 +287,7 @@
         "product",
         "collection-1"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Multimedia collage",
         "heading_size": "h2",
@@ -300,7 +300,6 @@
     },
     "multicolumn": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",
@@ -335,6 +334,7 @@
         "column2",
         "column3"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -354,7 +354,6 @@
     },
     "rich_text": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -374,6 +373,7 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",

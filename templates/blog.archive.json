@@ -16,6 +16,54 @@
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
       "blocks": {
+        "9aaf0c15-4bcf-482b-95d3-61ddb9cb6448": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-3",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "109d4f20-1c47-4821-9884-5ef7bc766d5f": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-2",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "58ec7317-a807-4424-a168-eead938872aa": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-1",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "8490bf58-376b-4020-af7c-af988393b080": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-3",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "94652b54-eaed-439e-9b76-7d714b3eda21": {
           "type": "blogpost_block",
           "settings": {
@@ -462,6 +510,10 @@
         }
       },
       "block_order": [
+        "9aaf0c15-4bcf-482b-95d3-61ddb9cb6448",
+        "109d4f20-1c47-4821-9884-5ef7bc766d5f",
+        "58ec7317-a807-4424-a168-eead938872aa",
+        "8490bf58-376b-4020-af7c-af988393b080",
         "94652b54-eaed-439e-9b76-7d714b3eda21",
         "b1de2f37-c35d-4f06-b720-c4c8c353aa06",
         "393e767e-a5ba-4d9a-9300-3a231046e865",
