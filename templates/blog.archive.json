@@ -16,6 +16,18 @@
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
       "blocks": {
+        "1470dbd2-a0ed-4b86-a561-0a6ea253f846": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/gaat-movie-geerten-harmens",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "9aaf0c15-4bcf-482b-95d3-61ddb9cb6448": {
           "type": "blogpost_block",
           "settings": {
@@ -510,6 +522,7 @@
         }
       },
       "block_order": [
+        "1470dbd2-a0ed-4b86-a561-0a6ea253f846",
         "9aaf0c15-4bcf-482b-95d3-61ddb9cb6448",
         "109d4f20-1c47-4821-9884-5ef7bc766d5f",
         "58ec7317-a807-4424-a168-eead938872aa",
