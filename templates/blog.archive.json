@@ -16,6 +16,18 @@
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
       "blocks": {
+        "51bbc1ab-f5bc-40c0-9637-ec2318d83c9b": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-4",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "1470dbd2-a0ed-4b86-a561-0a6ea253f846": {
           "type": "blogpost_block",
           "settings": {
@@ -522,6 +534,7 @@
         }
       },
       "block_order": [
+        "51bbc1ab-f5bc-40c0-9637-ec2318d83c9b",
         "1470dbd2-a0ed-4b86-a561-0a6ea253f846",
         "9aaf0c15-4bcf-482b-95d3-61ddb9cb6448",
         "109d4f20-1c47-4821-9884-5ef7bc766d5f",
