@@ -3,40 +3,14 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
-        "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea": {
+        "blogpost_block_LWBFKx": {
           "type": "blogpost_block",
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight-4",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "67447c67-844a-40f9-9a1c-77150b7d90b7": {
-          "type": "blogpost_block",
-          "disabled": true,
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/gaat-movie-geerten-harmens",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "d8e47318-96f2-4c0b-9acb-5a2cb60d0666": {
-          "type": "blogpost_block",
-          "disabled": true,
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-2",
-            "margin_top": 28,
-            "margin_right": 0,
+            "article": "shopify:\/\/blogs\/archive\/la-classette",
+            "margin_top": 4,
+            "margin_right": 8,
             "margin_bottom": 0,
             "margin_left": 0
           }
@@ -51,6 +25,18 @@
             "margin_right": 64,
             "margin_bottom": 60,
             "margin_left": 4
+          }
+        },
+        "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-4",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
           }
         },
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab": {
@@ -140,10 +126,9 @@
         }
       },
       "block_order": [
-        "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
-        "67447c67-844a-40f9-9a1c-77150b7d90b7",
-        "d8e47318-96f2-4c0b-9acb-5a2cb60d0666",
+        "blogpost_block_LWBFKx",
         "ff054ea4-c078-4934-85d8-b18b93509b4a",
+        "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
         "e06d4fca-2184-42d5-85e7-240ec3c1d803",
