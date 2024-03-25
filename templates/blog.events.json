@@ -27,10 +27,23 @@
             "margin_bottom": 0,
             "margin_left": 0
           }
+        },
+        "blogpost_block_KLiGWU": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-5",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
         }
       },
       "block_order": [
-        "blogpost_block_6LW4yB"
+        "blogpost_block_6LW4yB",
+        "blogpost_block_KLiGWU"
       ],
       "settings": {
         "video_url": "https:\/\/vimeo.com\/719896098",
