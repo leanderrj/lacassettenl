@@ -27,6 +27,18 @@
             "margin_left": 4
           }
         },
+        "blogpost_block_tpF6cj": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-5",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea": {
           "type": "blogpost_block",
           "settings": {
@@ -128,6 +140,7 @@
       "block_order": [
         "blogpost_block_LWBFKx",
         "ff054ea4-c078-4934-85d8-b18b93509b4a",
+        "blogpost_block_tpF6cj",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
