@@ -16,6 +16,18 @@
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
       "blocks": {
+        "blogpost_block_LqijfC": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-5",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "blogpost_block_qTkd49": {
           "type": "blogpost_block",
           "settings": {
@@ -546,6 +558,7 @@
         }
       },
       "block_order": [
+        "blogpost_block_LqijfC",
         "blogpost_block_qTkd49",
         "51bbc1ab-f5bc-40c0-9637-ec2318d83c9b",
         "1470dbd2-a0ed-4b86-a561-0a6ea253f846",
