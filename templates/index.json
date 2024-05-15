@@ -3,6 +3,18 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
+        "feeea564-f2fa-4198-8661-93b96177d91f": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/events\/clubnight-5",
+            "margin_top": 52,
+            "margin_right": -8,
+            "margin_bottom": 56,
+            "margin_left": 8
+          }
+        },
         "blogpost_block_LWBFKx": {
           "type": "blogpost_block",
           "settings": {
@@ -10,33 +22,9 @@
             "image_ratio": "square",
             "article": "shopify:\/\/blogs\/archive\/la-classette",
             "margin_top": 4,
-            "margin_right": 8,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "ff054ea4-c078-4934-85d8-b18b93509b4a": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": true,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-1",
-            "margin_top": 100,
             "margin_right": 64,
-            "margin_bottom": 60,
-            "margin_left": 4
-          }
-        },
-        "blogpost_block_tpF6cj": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-5",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
+            "margin_bottom": 32,
+            "margin_left": 44
           }
         },
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea": {
@@ -46,7 +34,7 @@
             "image_ratio": "square",
             "article": "shopify:\/\/blogs\/archive\/clubnight-4",
             "margin_top": 0,
-            "margin_right": 0,
+            "margin_right": -28,
             "margin_bottom": 0,
             "margin_left": 0
           }
@@ -57,10 +45,10 @@
             "featured_block": false,
             "image_ratio": "square",
             "article": "shopify:\/\/blogs\/events\/clubnight-3",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
+            "margin_top": 60,
+            "margin_right": 52,
+            "margin_bottom": -8,
+            "margin_left": 44
           }
         },
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb": {
@@ -70,7 +58,7 @@
             "image_ratio": "square",
             "article": "shopify:\/\/blogs\/archive\/clubnight-1",
             "margin_top": 76,
-            "margin_right": -40,
+            "margin_right": 52,
             "margin_bottom": 48,
             "margin_left": 0
           }
@@ -81,74 +69,20 @@
             "featured_block": false,
             "image_ratio": "square",
             "article": "shopify:\/\/blogs\/archive\/summerre-2",
-            "margin_top": 88,
-            "margin_right": -8,
+            "margin_top": 12,
+            "margin_right": 52,
             "margin_bottom": 16,
-            "margin_left": -40
-          }
-        },
-        "feeea564-f2fa-4198-8661-93b96177d91f": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/you-aint-seen-nothing-yet-a-la-cassette-documentary",
-            "margin_top": 0,
-            "margin_right": -8,
-            "margin_bottom": 0,
-            "margin_left": 8
-          }
-        },
-        "19c113be-a862-4f43-8ede-abb95bf7b6f6": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight",
-            "margin_top": 68,
-            "margin_right": -40,
-            "margin_bottom": 16,
-            "margin_left": -16
-          }
-        },
-        "4f318aea-b13a-4024-b045-f628fe32a81d": {
-          "type": "blogpost_block",
-          "disabled": true,
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/centraal-laat",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "e08cacb1-f1df-477f-88e9-1e4869cff5b9": {
-          "type": "product_block",
-          "disabled": true,
-          "settings": {
-            "image_ratio": "portrait",
-            "product": "the-la-cassette-far-from-done-sweater",
-            "margin_top": -28,
-            "margin_right": 36,
-            "margin_bottom": -28,
-            "margin_left": 20
+            "margin_left": 44
           }
         }
       },
       "block_order": [
+        "feeea564-f2fa-4198-8661-93b96177d91f",
         "blogpost_block_LWBFKx",
-        "ff054ea4-c078-4934-85d8-b18b93509b4a",
-        "blogpost_block_tpF6cj",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
-        "e06d4fca-2184-42d5-85e7-240ec3c1d803",
-        "feeea564-f2fa-4198-8661-93b96177d91f",
-        "19c113be-a862-4f43-8ede-abb95bf7b6f6",
-        "4f318aea-b13a-4024-b045-f628fe32a81d",
-        "e08cacb1-f1df-477f-88e9-1e4869cff5b9"
+        "e06d4fca-2184-42d5-85e7-240ec3c1d803"
       ],
       "settings": {
         "video_url": "https:\/\/vimeo.com\/719896098",
