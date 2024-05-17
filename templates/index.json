@@ -3,6 +3,18 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
+        "blogpost_block_NCjNd6": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-5",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "feeea564-f2fa-4198-8661-93b96177d91f": {
           "type": "blogpost_block",
           "settings": {
@@ -62,27 +74,15 @@
             "margin_bottom": 48,
             "margin_left": 0
           }
-        },
-        "e06d4fca-2184-42d5-85e7-240ec3c1d803": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/summerre-2",
-            "margin_top": 12,
-            "margin_right": 52,
-            "margin_bottom": 16,
-            "margin_left": 44
-          }
         }
       },
       "block_order": [
+        "blogpost_block_NCjNd6",
         "feeea564-f2fa-4198-8661-93b96177d91f",
         "blogpost_block_LWBFKx",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
-        "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
-        "e06d4fca-2184-42d5-85e7-240ec3c1d803"
+        "4a87b9b0-4d35-42e2-bdeb-8224ef75facb"
       ],
       "settings": {
         "video_url": "https:\/\/vimeo.com\/719896098",
