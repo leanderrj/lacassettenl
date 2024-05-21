@@ -5,7 +5,7 @@
       "settings": {
         "video_url": "",
         "description": "",
-        "video_file_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/408012a3bb704243a49899e766b8e8be.mp4",
+        "video_file_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d1a6d3e3e7b8486db03dff3add101122.mp4",
         "video_file_controls": false,
         "fixed_header": true,
         "full_width": true,
@@ -53,7 +53,8 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
           }
         },
         "collapsible-row-1": {
@@ -99,8 +100,12 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
         "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -110,7 +115,6 @@
     },
     "image-with-text": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "image-with-text-0": {
           "type": "heading",
@@ -131,6 +135,7 @@
         "image-with-text-0",
         "image-with-text-1"
       ],
+      "disabled": true,
       "settings": {
         "height": "small",
         "desktop_image_width": "medium",
@@ -146,7 +151,6 @@
     },
     "multicolumn": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
@@ -171,6 +175,7 @@
         "column-0",
         "column-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
