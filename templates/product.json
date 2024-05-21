@@ -68,6 +68,7 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sizing",
             "icon": "ruler",
@@ -80,7 +81,7 @@
           "disabled": true,
           "settings": {
             "heading": "EXTRA's",
-            "icon": "star",
+            "icon": "none",
             "content": "",
             "page": ""
           }
