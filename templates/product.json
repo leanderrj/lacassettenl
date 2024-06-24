@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "fd62f096-a816-4cda-8fd3-1ce6bf81134c": {
@@ -5,7 +14,7 @@
       "settings": {
         "video_url": "",
         "description": "",
-        "video_file_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ce43713df0fb4861bf047cbe6ebbb02f.mp4",
+        "video_file_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/408012a3bb704243a49899e766b8e8be.mp4",
         "video_file_controls": false,
         "fixed_header": true,
         "full_width": true,
