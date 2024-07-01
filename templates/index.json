@@ -1,8 +1,28 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
+        "product_block_dFLUNp": {
+          "type": "product_block",
+          "settings": {
+            "image_ratio": "square",
+            "product": "an-exclusive-la-cassette-recording",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "blogpost_block_NCjNd6": {
           "type": "blogpost_block",
           "settings": {
@@ -25,18 +45,6 @@
             "margin_right": -8,
             "margin_bottom": 56,
             "margin_left": 8
-          }
-        },
-        "blogpost_block_LWBFKx": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/la-classette",
-            "margin_top": 4,
-            "margin_right": 64,
-            "margin_bottom": 32,
-            "margin_left": 44
           }
         },
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea": {
@@ -77,9 +85,9 @@
         }
       },
       "block_order": [
+        "product_block_dFLUNp",
         "blogpost_block_NCjNd6",
         "feeea564-f2fa-4198-8661-93b96177d91f",
-        "blogpost_block_LWBFKx",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb"
