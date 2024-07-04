@@ -12,8 +12,21 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
+        "blogpost_block_dzBtyA": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/la-cassette-for-palestine",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "product_block_dFLUNp": {
           "type": "product_block",
+          "disabled": true,
           "settings": {
             "image_ratio": "square",
             "product": "an-exclusive-la-cassette-recording",
@@ -85,6 +98,7 @@
         }
       },
       "block_order": [
+        "blogpost_block_dzBtyA",
         "product_block_dFLUNp",
         "blogpost_block_NCjNd6",
         "feeea564-f2fa-4198-8661-93b96177d91f",
