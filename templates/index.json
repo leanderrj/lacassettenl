@@ -12,24 +12,23 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
-        "blogpost_block_dzBtyA": {
-          "type": "blogpost_block",
+        "product_block_dFLUNp": {
+          "type": "product_block",
           "settings": {
-            "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/la-cassette-for-palestine",
+            "product": "an-exclusive-la-cassette-recording",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
             "margin_left": 0
           }
         },
-        "product_block_dFLUNp": {
-          "type": "product_block",
-          "disabled": true,
+        "blogpost_block_dzBtyA": {
+          "type": "blogpost_block",
           "settings": {
+            "featured_block": false,
             "image_ratio": "square",
-            "product": "an-exclusive-la-cassette-recording",
+            "article": "shopify:\/\/blogs\/archive\/la-cassette-for-palestine",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -48,6 +47,19 @@
             "margin_left": 0
           }
         },
+        "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea": {
+          "type": "blogpost_block",
+          "disabled": true,
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify:\/\/blogs\/archive\/clubnight-4",
+            "margin_top": 0,
+            "margin_right": -28,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "feeea564-f2fa-4198-8661-93b96177d91f": {
           "type": "blogpost_block",
           "settings": {
@@ -58,18 +70,6 @@
             "margin_right": -8,
             "margin_bottom": 56,
             "margin_left": 8
-          }
-        },
-        "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight-4",
-            "margin_top": 0,
-            "margin_right": -28,
-            "margin_bottom": 0,
-            "margin_left": 0
           }
         },
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab": {
@@ -98,11 +98,11 @@
         }
       },
       "block_order": [
-        "blogpost_block_dzBtyA",
         "product_block_dFLUNp",
+        "blogpost_block_dzBtyA",
         "blogpost_block_NCjNd6",
-        "feeea564-f2fa-4198-8661-93b96177d91f",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
+        "feeea564-f2fa-4198-8661-93b96177d91f",
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb"
       ],
