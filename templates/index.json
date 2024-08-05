@@ -23,64 +23,8 @@
             "margin_left": 0
           }
         },
-        "product_block_dFLUNp": {
-          "type": "product_block",
-          "settings": {
-            "image_ratio": "square",
-            "product": "oops-i-splashed-the-sriracha-tee",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "product_block_XWcMXU": {
-          "type": "product_block",
-          "settings": {
-            "image_ratio": "square",
-            "product": "oops-i-splashed-the-sriracha-tee",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "product_block_668WNH": {
-          "type": "product_block",
-          "settings": {
-            "image_ratio": "square",
-            "product": "oops-i-splashed-the-sriracha-tee",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "product_block_Refz9U": {
-          "type": "product_block",
-          "settings": {
-            "image_ratio": "square",
-            "product": "oops-i-splashed-the-sriracha-tee",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
-        "product_block_miLHEV": {
-          "type": "product_block",
-          "settings": {
-            "image_ratio": "square",
-            "product": "oops-i-splashed-the-sriracha-tee",
-            "margin_top": 0,
-            "margin_right": 0,
-            "margin_bottom": 0,
-            "margin_left": 0
-          }
-        },
         "blogpost_block_dzBtyA": {
           "type": "blogpost_block",
-          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -93,7 +37,6 @@
         },
         "blogpost_block_NCjNd6": {
           "type": "blogpost_block",
-          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -106,7 +49,6 @@
         },
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea": {
           "type": "blogpost_block",
-          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -119,7 +61,6 @@
         },
         "feeea564-f2fa-4198-8661-93b96177d91f": {
           "type": "blogpost_block",
-          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -132,7 +73,6 @@
         },
         "597a2a8a-e89f-4f3c-a1e2-013461e1efab": {
           "type": "blogpost_block",
-          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -159,11 +99,6 @@
       },
       "block_order": [
         "product_block_8ykXGV",
-        "product_block_dFLUNp",
-        "product_block_XWcMXU",
-        "product_block_668WNH",
-        "product_block_Refz9U",
-        "product_block_miLHEV",
         "blogpost_block_dzBtyA",
         "blogpost_block_NCjNd6",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
