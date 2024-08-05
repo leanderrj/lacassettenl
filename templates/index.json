@@ -12,6 +12,17 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
+        "product_block_8ykXGV": {
+          "type": "product_block",
+          "settings": {
+            "image_ratio": "square",
+            "product": "oops-i-splashed-the-sriracha-tee",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "product_block_dFLUNp": {
           "type": "product_block",
           "settings": {
@@ -26,7 +37,7 @@
         "product_block_XWcMXU": {
           "type": "product_block",
           "settings": {
-            "image_ratio": "portrait",
+            "image_ratio": "square",
             "product": "oops-i-splashed-the-sriracha-tee",
             "margin_top": 0,
             "margin_right": 0,
@@ -37,7 +48,29 @@
         "product_block_668WNH": {
           "type": "product_block",
           "settings": {
-            "image_ratio": "portrait",
+            "image_ratio": "square",
+            "product": "oops-i-splashed-the-sriracha-tee",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "product_block_Refz9U": {
+          "type": "product_block",
+          "settings": {
+            "image_ratio": "square",
+            "product": "oops-i-splashed-the-sriracha-tee",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "product_block_miLHEV": {
+          "type": "product_block",
+          "settings": {
+            "image_ratio": "square",
             "product": "oops-i-splashed-the-sriracha-tee",
             "margin_top": 0,
             "margin_right": 0,
@@ -125,9 +158,12 @@
         }
       },
       "block_order": [
+        "product_block_8ykXGV",
         "product_block_dFLUNp",
         "product_block_XWcMXU",
         "product_block_668WNH",
+        "product_block_Refz9U",
+        "product_block_miLHEV",
         "blogpost_block_dzBtyA",
         "blogpost_block_NCjNd6",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
