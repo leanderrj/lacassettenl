@@ -143,8 +143,7 @@
         >
           <h1>{{ block.settings.featured_block }}</h1>
 
-          {%
-            render 'card-product',
+          {% render 'card-product',
             card_product: block.settings.product,
             media_aspect_ratio: block.settings.image_ratio,
             show_secondary_image: false,
@@ -153,7 +152,7 @@
             show_quick_add: false,
             lacassette_grid: true,
             section_id: block.type,
-            wrapper_class: 'twcss-w-[320px]';
+            wrapper_class: 'twcss-w-[320px]'
           %}
         </div>
       {% endif %}
