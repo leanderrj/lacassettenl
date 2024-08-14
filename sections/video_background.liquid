@@ -27,7 +27,7 @@
   {% endif %}
 </style>
 
-{%- if section.settings.video_url != blank -%}
+{%- if section.settings.video_url != blank or section.settings.video_file_url != blank -%}
   <div class="color-{{ section.settings.color_scheme }} gradient">
     <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
       {%- if section.settings.video_url.type == 'youtube' -%}
