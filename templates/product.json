@@ -11,11 +11,11 @@
   "sections": {
     "fd62f096-a816-4cda-8fd3-1ce6bf81134c": {
       "type": "video_background",
-      "disabled": true,
       "settings": {
         "video_url": "",
         "description": "",
-        "video_file_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/63971092b9e04522a1e54a701a0568ad.mp4",
+        "video": "{{ product.metafields.leme.video_campagin.value }}",
+        "video_file_url": "",
         "video_file_controls": false,
         "fixed_header": true,
         "full_width": true,
