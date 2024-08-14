@@ -117,7 +117,7 @@ Add the correct font weight in Edge and Safari.
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 /*
@@ -339,6 +339,10 @@ menu {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.product__description ul{
+  list-style: disc;
 }
 
 /*
