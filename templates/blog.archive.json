@@ -25,12 +25,24 @@
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
       "blocks": {
+        "blogpost_block_U7V7qr": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify://blogs/events/clubnight-6",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "blogpost_block_gmrQCt": {
           "type": "blogpost_block",
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/la-cassette-for-palestine",
+            "article": "shopify://blogs/archive/la-cassette-for-palestine",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -42,7 +54,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight-5",
+            "article": "shopify://blogs/archive/clubnight-5",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -54,7 +66,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-5",
+            "article": "shopify://blogs/events/clubnight-5",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -66,7 +78,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/la-classette",
+            "article": "shopify://blogs/archive/la-classette",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -78,7 +90,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight-4",
+            "article": "shopify://blogs/archive/clubnight-4",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -90,7 +102,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/gaat-movie-geerten-harmens",
+            "article": "shopify://blogs/events/gaat-movie-geerten-harmens",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -102,7 +114,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-3",
+            "article": "shopify://blogs/events/clubnight-3",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -114,7 +126,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-2",
+            "article": "shopify://blogs/events/clubnight-2",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -126,7 +138,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight-1",
+            "article": "shopify://blogs/events/clubnight-1",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -138,7 +150,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight-3",
+            "article": "shopify://blogs/archive/clubnight-3",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -150,7 +162,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight-2",
+            "article": "shopify://blogs/archive/clubnight-2",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -162,7 +174,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight-1",
+            "article": "shopify://blogs/archive/clubnight-1",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -174,7 +186,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/you-aint-seen-nothing-yet-a-la-cassette-documentary",
+            "article": "shopify://blogs/archive/you-aint-seen-nothing-yet-a-la-cassette-documentary",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -186,7 +198,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/events\/clubnight",
+            "article": "shopify://blogs/events/clubnight",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -198,7 +210,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/gaat-movie-rogier-de-reiger",
+            "article": "shopify://blogs/archive/gaat-movie-rogier-de-reiger",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -210,7 +222,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/nye-wild-wilder-weelde",
+            "article": "shopify://blogs/archive/nye-wild-wilder-weelde",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -222,7 +234,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnight",
+            "article": "shopify://blogs/archive/clubnight",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -234,7 +246,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/gaat-movie-sami-el-hassini",
+            "article": "shopify://blogs/archive/gaat-movie-sami-el-hassini",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -246,7 +258,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/summerre-2",
+            "article": "shopify://blogs/archive/summerre-2",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -258,7 +270,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/summerre-1",
+            "article": "shopify://blogs/archive/summerre-1",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -270,7 +282,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/centraal-laat",
+            "article": "shopify://blogs/archive/centraal-laat",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -282,7 +294,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/fysical-flyer-woohah-x-rolling-loud-2022",
+            "article": "shopify://blogs/archive/fysical-flyer-woohah-x-rolling-loud-2022",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -294,7 +306,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnacht-3",
+            "article": "shopify://blogs/archive/clubnacht-3",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -306,7 +318,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/woohah",
+            "article": "shopify://blogs/archive/woohah",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -318,7 +330,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/shining-our-light-into-the-darkness-campaign",
+            "article": "shopify://blogs/archive/shining-our-light-into-the-darkness-campaign",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -330,7 +342,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnacht-2",
+            "article": "shopify://blogs/archive/clubnacht-2",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -342,7 +354,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/gaat-movie-camille-boumans",
+            "article": "shopify://blogs/archive/gaat-movie-camille-boumans",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -354,7 +366,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/lacalolly",
+            "article": "shopify://blogs/archive/lacalolly",
             "margin_top": 100,
             "margin_right": -8,
             "margin_bottom": -8,
@@ -366,7 +378,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/gaat-movie-malika-helena-de-rijke",
+            "article": "shopify://blogs/archive/gaat-movie-malika-helena-de-rijke",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -378,7 +390,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/clubnacht-1",
+            "article": "shopify://blogs/archive/clubnacht-1",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -390,7 +402,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/a-public-service-announcement",
+            "article": "shopify://blogs/archive/a-public-service-announcement",
             "margin_top": 32,
             "margin_right": -16,
             "margin_bottom": 96,
@@ -402,7 +414,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/gaat-movie-suzanne-koopstra",
+            "article": "shopify://blogs/archive/gaat-movie-suzanne-koopstra",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -414,7 +426,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/gaat-movie-1",
+            "article": "shopify://blogs/archive/gaat-movie-1",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -426,7 +438,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/an-evening-with-la-cassette-2",
+            "article": "shopify://blogs/archive/an-evening-with-la-cassette-2",
             "margin_top": -40,
             "margin_right": -12,
             "margin_bottom": 56,
@@ -438,7 +450,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/an-evening-with-la-cassette",
+            "article": "shopify://blogs/archive/an-evening-with-la-cassette",
             "margin_top": 40,
             "margin_right": 4,
             "margin_bottom": -32,
@@ -450,7 +462,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/a-tajine-dream",
+            "article": "shopify://blogs/archive/a-tajine-dream",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -462,7 +474,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/la-cassette-roffa",
+            "article": "shopify://blogs/archive/la-cassette-roffa",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -474,7 +486,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/summ3-1",
+            "article": "shopify://blogs/archive/summ3-1",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -486,7 +498,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/summerre-burning-feet-exposition",
+            "article": "shopify://blogs/archive/summerre-burning-feet-exposition",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -498,7 +510,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/far-from-done-sweatshirt-campaign",
+            "article": "shopify://blogs/archive/far-from-done-sweatshirt-campaign",
             "margin_top": 36,
             "margin_right": 8,
             "margin_bottom": -32,
@@ -510,7 +522,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/d",
+            "article": "shopify://blogs/archive/d",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -522,7 +534,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/from-the-big-u-shawl-campaign-with-noble-goods-co",
+            "article": "shopify://blogs/archive/from-the-big-u-shawl-campaign-with-noble-goods-co",
             "margin_top": -40,
             "margin_right": -20,
             "margin_bottom": -40,
@@ -534,7 +546,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko-4",
+            "article": "shopify://blogs/archive/la-cassette-in-the-ekko-4",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -546,7 +558,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko-3",
+            "article": "shopify://blogs/archive/la-cassette-in-the-ekko-3",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -558,7 +570,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/filmcafe-2",
+            "article": "shopify://blogs/archive/filmcafe-2",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -570,7 +582,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/la-cassette-in-the-ekko",
+            "article": "shopify://blogs/archive/la-cassette-in-the-ekko",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -582,7 +594,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify:\/\/blogs\/archive\/film-cafe-1",
+            "article": "shopify://blogs/archive/film-cafe-1",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -591,6 +603,7 @@
         }
       },
       "block_order": [
+        "blogpost_block_U7V7qr",
         "blogpost_block_gmrQCt",
         "blogpost_block_VFBrkk",
         "blogpost_block_LqijfC",
@@ -640,7 +653,7 @@
         "d7f5fc12-f893-43fd-8222-634108c75afb"
       ],
       "settings": {
-        "video_url": "https:\/\/vimeo.com\/719896098",
+        "video_url": "https://vimeo.com/719896098",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
