@@ -12,6 +12,18 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
+        "4a87b9b0-4d35-42e2-bdeb-8224ef75facb": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify://blogs/archive/blockparty-fasionshow",
+            "margin_top": 76,
+            "margin_right": 52,
+            "margin_bottom": 48,
+            "margin_left": 0
+          }
+        },
         "product_block_8ykXGV": {
           "type": "product_block",
           "settings": {
@@ -83,28 +95,16 @@
             "margin_bottom": -8,
             "margin_left": 44
           }
-        },
-        "4a87b9b0-4d35-42e2-bdeb-8224ef75facb": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify://blogs/archive/blockparty-fasionshow",
-            "margin_top": 76,
-            "margin_right": 52,
-            "margin_bottom": 48,
-            "margin_left": 0
-          }
         }
       },
       "block_order": [
+        "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
         "product_block_8ykXGV",
         "blogpost_block_dzBtyA",
         "blogpost_block_NCjNd6",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
         "feeea564-f2fa-4198-8661-93b96177d91f",
-        "597a2a8a-e89f-4f3c-a1e2-013461e1efab",
-        "4a87b9b0-4d35-42e2-bdeb-8224ef75facb"
+        "597a2a8a-e89f-4f3c-a1e2-013461e1efab"
       ],
       "settings": {
         "video_url": "https://vimeo.com/719896098",
