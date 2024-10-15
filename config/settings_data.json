@@ -1,17 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Circle_80f8bd81-6a51-41fb-ae7f-a9dd19e8d4e9.png",
+    "logo": "shopify://shop_images/Circle_80f8bd81-6a51-41fb-ae7f-a9dd19e8d4e9.png",
     "logo_width": 80,
-    "favicon": "shopify:\/\/shop_images\/Circle_3.jpg",
+    "favicon": "shopify://shop_images/Circle_3.jpg",
     "colors_solid_button_labels": "#f3f3f3",
     "colors_accent_1": "#fe0100",
     "gradient_accent_1": "",
@@ -95,15 +95,15 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "https:\/\/twitter.com\/lecassette",
+    "social_twitter_link": "https://twitter.com/lecassette",
     "social_facebook_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/lacassette.online\/",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@lacassette.online",
+    "social_instagram_link": "https://www.instagram.com/lacassette.online/",
+    "social_tiktok_link": "https://www.tiktok.com/@lacassette.online",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
-    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCoVBwhotEhahCEkBs65RJmw",
-    "social_vimeo_link": "https:\/\/vimeo.com\/user128227318",
+    "social_youtube_link": "https://www.youtube.com/channel/UCoVBwhotEhahCEkBs65RJmw",
+    "social_vimeo_link": "https://vimeo.com/user128227318",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
@@ -150,7 +150,7 @@
             "type": "text",
             "settings": {
               "heading": "ABOUT",
-              "subtext": "<p>Connections are best found during the night. At night, people let down their guards and openly express their true selves. Escaping the Rat Race and searching for ways to let go of unwanted stress. It's the night when it's best to start building connections.<\/p><p><\/p>"
+              "subtext": "<p>Connections are best found during the night. At night, people let down their guards and openly express their true selves. Escaping the Rat Race and searching for ways to let go of unwanted stress. It's the night when it's best to start building connections.</p><p></p>"
             }
           },
           "footer-0": {
@@ -197,7 +197,7 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Circle_80f8bd81-6a51-41fb-ae7f-a9dd19e8d4e9.png",
+          "logo": "shopify://shop_images/Circle_80f8bd81-6a51-41fb-ae7f-a9dd19e8d4e9.png",
           "logo_max_width": 100,
           "color_scheme": "background-1"
         }
@@ -211,7 +211,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
@@ -360,7 +368,7 @@
               "type": "text",
               "settings": {
                 "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+                "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
               }
             }
           },
