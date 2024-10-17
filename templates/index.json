@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1662542020dd9810f3": {
@@ -40,7 +40,7 @@
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify://blogs/events/clubnight-6",
+            "article": "shopify://blogs/events/radioshow",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
