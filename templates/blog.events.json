@@ -25,6 +25,18 @@
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
       "blocks": {
+        "blogpost_block_GfwmjH": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify://blogs/events/exhibition-rave-diggers",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "blogpost_block_wU6Ec8": {
           "type": "blogpost_block",
           "disabled": true,
@@ -52,6 +64,7 @@
         }
       },
       "block_order": [
+        "blogpost_block_GfwmjH",
         "blogpost_block_wU6Ec8",
         "blogpost_block_njzxty"
       ],
