@@ -24,23 +24,23 @@
             "margin_left": 0
           }
         },
-        "product_block_8ykXGV": {
-          "type": "product_block",
+        "blogpost_block_dzBtyA": {
+          "type": "blogpost_block",
           "settings": {
+            "featured_block": false,
             "image_ratio": "square",
-            "product": "oops-i-splashed-the-sriracha-tee",
+            "article": "shopify://blogs/events/exhibition-rave-diggers",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
             "margin_left": 0
           }
         },
-        "blogpost_block_dzBtyA": {
-          "type": "blogpost_block",
+        "product_block_8ykXGV": {
+          "type": "product_block",
           "settings": {
-            "featured_block": false,
             "image_ratio": "square",
-            "article": "shopify://blogs/archive/blockparty-fasionshow",
+            "product": "oops-i-splashed-the-sriracha-tee",
             "margin_top": 0,
             "margin_right": 0,
             "margin_bottom": 0,
@@ -99,8 +99,8 @@
       },
       "block_order": [
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
-        "product_block_8ykXGV",
         "blogpost_block_dzBtyA",
+        "product_block_8ykXGV",
         "blogpost_block_NCjNd6",
         "82ab7f9d-f1cb-42fa-9ab5-ed1e36059aea",
         "feeea564-f2fa-4198-8661-93b96177d91f",
