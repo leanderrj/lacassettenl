@@ -25,6 +25,30 @@
     "cbca86c4-d49f-4d46-9a8f-6220ebc36b5c": {
       "type": "leme-casette",
       "blocks": {
+        "blogpost_block_L6j4xa": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify://blogs/events/exhibition-rave-diggers",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
+        "blogpost_block_eECL3H": {
+          "type": "blogpost_block",
+          "settings": {
+            "featured_block": false,
+            "image_ratio": "square",
+            "article": "shopify://blogs/archive/clubnight-6",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "blogpost_block_dJRdBD": {
           "type": "blogpost_block",
           "settings": {
@@ -457,30 +481,6 @@
             "margin_left": 0
           }
         },
-        "6a8ff93c-f3df-405d-bf5a-37dbb37ddc7a": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify://blogs/archive/an-evening-with-la-cassette-2",
-            "margin_top": -40,
-            "margin_right": -12,
-            "margin_bottom": 56,
-            "margin_left": 0
-          }
-        },
-        "88ace52a-2097-4fee-acd2-24fb592234a7": {
-          "type": "blogpost_block",
-          "settings": {
-            "featured_block": false,
-            "image_ratio": "square",
-            "article": "shopify://blogs/archive/an-evening-with-la-cassette",
-            "margin_top": 40,
-            "margin_right": 4,
-            "margin_bottom": -32,
-            "margin_left": -24
-          }
-        },
         "a15dd849-a870-405b-8b53-988ba30fcdfe": {
           "type": "blogpost_block",
           "settings": {
@@ -627,6 +627,8 @@
         }
       },
       "block_order": [
+        "blogpost_block_L6j4xa",
+        "blogpost_block_eECL3H",
         "blogpost_block_dJRdBD",
         "blogpost_block_bjLGUG",
         "blogpost_block_U7V7qr",
@@ -663,8 +665,6 @@
         "7e399cee-f620-41e5-afe4-c4de021d7657",
         "2cc1c029-2cdc-4f6c-b66e-5b1fe97399d6",
         "a297909a-ceb2-4847-aefb-fc1e6d4f2ead",
-        "6a8ff93c-f3df-405d-bf5a-37dbb37ddc7a",
-        "88ace52a-2097-4fee-acd2-24fb592234a7",
         "a15dd849-a870-405b-8b53-988ba30fcdfe",
         "1770d8de-f51e-4269-8897-75d9ffc46a47",
         "9dc4da25-a323-4936-ad19-2ce429cdf3dd",
