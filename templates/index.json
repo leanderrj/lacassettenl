@@ -12,8 +12,20 @@
     "1662542020dd9810f3": {
       "type": "leme-casette",
       "blocks": {
+        "product_block_qTfQYP": {
+          "type": "product_block",
+          "settings": {
+            "image_ratio": "square",
+            "product": "dj-glove-s-white",
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 0,
+            "margin_left": 0
+          }
+        },
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb": {
           "type": "blogpost_block",
+          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
@@ -98,6 +110,7 @@
         }
       },
       "block_order": [
+        "product_block_qTfQYP",
         "4a87b9b0-4d35-42e2-bdeb-8224ef75facb",
         "blogpost_block_dzBtyA",
         "product_block_8ykXGV",
