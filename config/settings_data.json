@@ -128,8 +128,7 @@
         "block_order": [
           "announcement-bar-0"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "header": {
         "type": "header",
@@ -150,7 +149,7 @@
             "type": "text",
             "settings": {
               "heading": "ABOUT",
-              "subtext": "<p>While growing as an event, we’re started to see <strong>La Cassette</strong> as much more than just a party. Slowly, it’s been evolving into a lively brand, expanding into various creative pursuits such as cultural movie nights, mentorship programs, expositions and fashion.</p><p> </p><p>As our motto ‘<strong>Far From Done</strong>’ implies, we tend to keep on growing, learning and surprising while creatively pursuing and exploring new possibilities. </p>"
+              "subtext": "<p>What started as a small hip-hop party has grown into La Cassette, a multidisciplinary creative brand rooted in nightlife.</p><p><br/>We’ve expanded beyond the club, curating cultural movie nights, mentorship programs, expositions, and fashion projects. Our motto, ‘Far From Done’, reflects our drive to keep growing, creating, and pushing culture forward.</p><p><br/>While staying true to our roots, we’re evolving into a creative agency; bringing our bold, authentic La Cassette touch to every project we take on.</p><p><br/>At La Cassette, we’re dedicated to broadening creativity, connecting young people, and delivering inspiring and uniting experiences.</p>"
             }
           },
           "footer-0": {
@@ -209,15 +208,12 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -335,8 +331,7 @@
           "block_order": [
             "announcement-bar-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "header": {
           "type": "header",
