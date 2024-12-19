@@ -27,7 +27,6 @@
       "blocks": {
         "blogpost_block_wU6Ec8": {
           "type": "blogpost_block",
-          "disabled": true,
           "settings": {
             "featured_block": false,
             "image_ratio": "square",
